@@ -10,5 +10,6 @@ source ~/dot-files/bash_exports_secret.sh
 source ~/dot-files/bash_options.sh
 source ~/dot-files/bash_aliases.sh
 source ~/dot-files/bash_powerline.sh
+source ~/dot-files/bash_hh_configuration.sh
 
 green_echo "Cleaning up the screen..."; clear

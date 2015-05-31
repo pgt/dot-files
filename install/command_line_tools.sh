@@ -36,3 +36,9 @@ brew install imagemagick
 
 green_echo "Installing ngrep"
 brew install ngrep
+
+green_echo "Installing TheSilverSearcher"
+brew install the_silver_searcher
+
+green_echo "Installing HH (Bash history management)"
+brew install hh
