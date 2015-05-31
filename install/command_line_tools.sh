@@ -42,3 +42,6 @@ brew install the_silver_searcher
 
 green_echo "Installing HH (Bash history management)"
 brew install hh
+
+green_echo "Installing Httrack (suck sites)"
+brew install httrack
