@@ -39,3 +39,6 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Emacs GUI
 alias emacs="open -a /Applications/Emacs.app $1"
+
+# PG installation
+alias install_pg="gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config"
