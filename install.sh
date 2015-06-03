@@ -10,7 +10,7 @@ ln -s ~/code/dot-files/.bash_profile ~/.bash_profile
 
 green_echo ".git_config"
 rm -rf ~/.git_config
-ln -s ~/code/dot-files/.git_config ~/.git_config
+ln -s ~/code/dot-files/.gitconfig ~/.gitconfig
 
 green_echo "Installing first dependencies"; source ".init.sh"
 
