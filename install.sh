@@ -6,11 +6,11 @@ green_echo "Linking files to your home directory"
 
 green_echo ".bash_profile"
 rm -rf ~/.bash_profile
-ln -s dot-files/.bash_profile ~/.bash_profile
+ln -s ~/code/dot-files/.bash_profile ~/.bash_profile
 
 green_echo ".git_config"
 rm -rf ~/.git_config
-ln -s dot-files/.git_config ~/.git_config
+ln -s ~/code/dot-files/.git_config ~/.git_config
 
 green_echo "Installing first dependencies"; source ".init.sh"
 
