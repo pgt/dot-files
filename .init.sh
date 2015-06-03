@@ -27,5 +27,5 @@ green_echo "Loading Exportations"; source "bash_exports.sh"
 green_echo "Loading aliases"; source "bash_aliases.sh"
 green_echo "Loading prompt"; source "bash_prompt.sh"
 
-red_echo "Don't forget of the configurations on Github"
+red_echo "Don't forget of the configurations on Github. Configure on file bashexports_secret.sh"
 red_echo "https://help.github.com/articles/generating-ssh-keys/"
