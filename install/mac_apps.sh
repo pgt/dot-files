@@ -17,7 +17,7 @@ green_echo "Installing Flash Player"; brew cask install flash-player
 green_echo "Installing Dropbox"; brew cask install dropbox
 green_echo "Installing Postgres.app"; brew cask install postgres
 green_echo "Installing Spectacle"; brew cask install spectacle
-green_echo "Installing iTerm"; brew cask install iterm
+green_echo "Installing iTerm"; brew cask install iterm2
 green_echo "Installing Slack"; brew cask install slack
 green_echo "Installing Emacs"; brew cask install emacs
 green_echo "Installing Spotify"; brew cask install spotify
