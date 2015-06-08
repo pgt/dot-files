@@ -1,6 +1,9 @@
 #!/bin/bash
 
-source ~/code/.bash-powerline.sh
+eval "$(rbenv init -)"
+
+PATH="/Users/pedrotavares/.rbenv/shims:/Users/pedrotavares/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+
 source ~/code/dot-files/functions.sh
 source ~/code/dot-files/bash_exports.sh
 red_green "Warning: Please copy the file bash_exports_secret.sh.example and do your version"
