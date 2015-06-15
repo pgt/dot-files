@@ -29,8 +29,9 @@ red_echo "Hey, install the Pocket.app on AppStore cause here on cask isn't possi
 # Fireworks
 # Photoshop
 # Adobe Illustrator
-# VMware Fusion; brew cask install vmware-fusion
-# Docker; brew cask install boot2docker
 # alfred; brew cask install alfred
 # Handbrake
-# Vagrant; brew cask install vagrant
+
+green_echo "Installing Docker"; brew cask install boot2docker
+green_echo "Installing VMware Fusion"; brew cask install vmware-fusion
+green_echo "Installing Vagrant"; brew cask install vagrant

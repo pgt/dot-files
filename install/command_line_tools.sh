@@ -45,3 +45,6 @@ brew install hh
 
 green_echo "Installing Httrack (suck sites)"
 brew install httrack
+
+green_echo "Installing unrar"
+brew install unrar
