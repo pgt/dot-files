@@ -2,7 +2,35 @@
 
 eval "$(rbenv init -)"
 
-PATH="/Users/pedrotavares/.rbenv/shims:/Users/pedrotavares/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/Users/pedrotavares/.rbenv/shims:/Users/pedrotavares/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+
+# default editor
+export EDITOR="emacs"
+
+# Locale
+export LC_ALL=en_US.utf-8
+export LANG=en_US.utf-8
+
+# Ignore duplicate commands in the history
+export HISTCONTROL=ignoredups
+
+# Increase the maximum number of lines contained in the history file
+# (default is 500)
+export HISTFILESIZE=10000
+
+# Increase the maximum number of commands to remember
+# (default is 500)
+export HISTSIZE=10000
+
+# Make new shells get the history lines from all previous
+# shells instead of the default "last window closed" history
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
+# Paths to Go code
+export GOROOT=/usr/local/go
+export GOPATH=~/gocode
+export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOPATH/bin
 
 source ~/code/dot-files/functions.sh
 source ~/code/dot-files/bash_exports.sh
