@@ -42,3 +42,6 @@ source ~/code/dot-files/bash_powerline.sh
 source ~/code/dot-files/bash_hh_configuration.sh
 
 green_echo "Cleaning up the screen..."; clear
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
