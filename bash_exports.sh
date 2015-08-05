@@ -24,3 +24,9 @@ export HISTSIZE=10000
 # Make new shells get the history lines from all previous
 # shells instead of the default "last window closed" history
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
+# GO env vars
+export GOROOT=$HOME/go
+export GOPATH=$HOME/code/go
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$GOROOT/bin
