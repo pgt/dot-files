@@ -9,6 +9,10 @@ alias code="cd ~/code"
 alias ..="cd .."
 alias ...="cd ../.."
 
+# Colors
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
 alias localip="ipconfig getifaddr en1"
 
 # Flush DNS cache

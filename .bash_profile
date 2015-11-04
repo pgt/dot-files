@@ -2,6 +2,8 @@
 
 eval "$(rbenv init -)"
 
+export HOME=~
+
 export PATH="/Users/pedrotavares/.rbenv/shims:/Users/pedrotavares/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
 # default editor
@@ -31,6 +33,12 @@ export GOROOT=/usr/local/go
 export GOPATH=~/gocode
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
+
+# Bash configs
+CDPATH=$CDPATH:$HOME/code:$HOME/Dropbox
+
+shopt -s autocd # Autocomplete on bash
+shopt -s cdspell # Autocorrect on bash
 
 source ~/code/dot-files/functions.sh
 source ~/code/dot-files/bash_exports.sh
