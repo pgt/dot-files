@@ -2,6 +2,7 @@
 
 green_echo "bash_aliases.sh"
 green_echo "Creating some aliases"
+
 # Some aliases
 alias code="cd ~/code"
 

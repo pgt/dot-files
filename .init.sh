@@ -1,7 +1,5 @@
 #!/bin/bash
 
-green_echo "All right, let's get it started"
-
 # FIRST DEPENDENCIES
 
 green_echo "Installing Homebrew"

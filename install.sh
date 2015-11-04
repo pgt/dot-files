@@ -1,24 +1,29 @@
 #!/bin/bash
 
-echo "Loading functions"; source "functions.sh"
+set -euo pipefail
 
-green_echo "Linking files to your home directory"
+# Requiring functions
+source "functions.sh"
 
-green_echo ".bash_profile"
-rm -rf ~/.bash_profile
-ln -s ~/code/dot-files/.bash_profile ~/.bash_profile
+# Requiring files and functions
+require_dependencies
 
-green_echo ".git_config"
-rm -rf ~/.git_config
-ln -s ~/code/dot-files/.gitconfig ~/.gitconfig
+if linux
+      link_files_at_home
+
+   if mac
+      green_echo "Configuring the environment on this Mac"
+      source "osx/.init.sh"
+
+      link_files_at_home
 
 green_echo "Installing first dependencies"; source ".init.sh"
 
 green_echo "Installing necessary apps, commands and packages"
 source "install/.init.sh"
 
-green_echo "Configuring the environment on this Mac"
-source "osx/.init.sh"
 
-red_echo "Run the command 'source ~/.bash_profile'"
-green_echo "Finished installation. Have fun :)"
+function __now() {
+    # A lógica de início deve ficar aqui, assim na execução será feito
+    # ./install __now
+}

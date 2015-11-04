@@ -10,11 +10,6 @@ sudo add-apt-repository ppa:synapse-core/ppa
 sudo apt-get update
 sudo apt-get install synapse
 
-# Git newest version
-sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get update
-apt-get install git
-
 # Dropbox
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 ~/.dropbox-dist/dropboxd
@@ -87,21 +82,6 @@ sudo apt-get install apache2 libapache2-php5
 sudo apt-get install mongod
 sudo apt-get install redis-server
 
-# Popcorntime
-wget https://get.popcorntime.io/build/Popcorn-Time-0.3.8-5-Linux-64.tar.xz
-tar -xzvf Popcorn-Time-0.3.8-5-Linux-64.tar.xz
-cd Popcorn-Time-0.3.8-5-Linux-64
-./configure
-make
-make install
-
-# Postgresql
-sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
-wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install postgresql-common
-sudo apt-get install postgresql-9.4 libpq-dev
-
 # Spotify
 wget http://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.0.15.137.gbdf68615_amd64.deb
 
@@ -165,30 +145,3 @@ rm -rf source-code-pro-1.017R/ 1.017R.zip
 
 ## KDE
 .kde/share/config/kdeglobals
-
-# "Emacs dependencies"
-sudo apt-get install ag
-sudo apt-get install ispell
-
-# Packages
-sudo apt-get install build-essentials
-sudo apt-get install gcc
-sudo apt-get install bash-completion
-sudo apt-get install tree
-sudo apt-get install htop
-sudo apt-get install heroku-toolbelt
-sudo apt-get install git
-sudo apt-get install wget
-sudo apt-get install node
-sudo apt-get install imagemagick
-sudo apt-get install ngrep
-sudo apt-get install the_silver_searcher
-sudo apt-get install hh
-sudo apt-get install httrack
-sudo apt-get install unrar
-sudo apt-get install markdown
-sudo apt-get install gpg # ?????
-
-# todo: I will use this?
-# Type `git open` to open the GitHub page or website for a repository.
-npm install -g git-open
