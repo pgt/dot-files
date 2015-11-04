@@ -48,3 +48,6 @@ brew install httrack
 
 green_echo "Installing unrar"
 brew install unrar
+
+green_echo "Installing gpg"
+brew install gpg

@@ -51,6 +51,11 @@ alias start_urxvt_server = 'urxvtd -q -f -o'
 alias myterm = 'urxvtc'
 
 # Terminator
+# Terminator confs
+# ~/.config/terminator/config
+# -b for borderless and
+# -m for maximized.
+# The final Command is following terminator -m -b -l my_default.
 sudo apt-get install terminator
 
 # PGadmin3
@@ -149,7 +154,7 @@ rm virtualbox-*.deb
 # Font SourceCodePro
 wget https://github.com/adobe-fonts/source-code-pro/archive/1.017R.zip
 unzip 1.017R.zip
-$(MKDIR) -p ~/.fonts
+mkdir -p ~/.fonts
 cp source-code-pro-1.017R/OTF/*.otf ~/.fonts/
 fc-cache -f -v
 rm -rf source-code-pro-1.017R/ 1.017R.zip
@@ -179,7 +184,8 @@ sudo apt-get install the_silver_searcher
 sudo apt-get install hh
 sudo apt-get install httrack
 sudo apt-get install unrar
-
+sudo apt-get install markdown
+sudo apt-get install gpg # ?????
 
 # todo: I will use this?
 # Type `git open` to open the GitHub page or website for a repository.
