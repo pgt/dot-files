@@ -171,6 +171,8 @@ sudo apt-get install ag
 sudo apt-get install ispell
 
 # Packages
+sudo apt-get install build-essentials
+sudo apt-get install gcc
 sudo apt-get install bash-completion
 sudo apt-get install tree
 sudo apt-get install htop
