@@ -1,0 +1,12 @@
+[General]
+Default Identity=777203008
+
+[Identity #0]
+Default Domain=pgt-virtual-machine
+Disable Fcc=false
+Identity=Pedro Tavares
+Image Location=
+Inline Signature=
+Name=Pedro Tavares
+Signature Enabled=false
+uoid=777203008

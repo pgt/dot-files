@@ -1,0 +1,8 @@
+[Favorites]
+FavoriteURLs=/usr/share/applications/firefox.desktop,/usr/share/applications/org.kde.kontact.desktop,/usr/share/applications/systemsettings.desktop,/usr/share/applications/org.kde.dolphin.desktop,/usr/share/applications/org.kde.ktpcontactlist.desktop,/usr/share/applications/org.kde.kate.desktop,/usr/share/applications/org.kde.discover.desktop
+
+[KRunner]
+loadAll=false
+
+[KRunner][PlasmaRunnerManager]
+pluginWhiteList=places,shell,services,bookmarks,recentdocuments,locations,baloosearch
