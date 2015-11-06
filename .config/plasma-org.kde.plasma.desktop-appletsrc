@@ -109,6 +109,10 @@ location=0
 plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
+[Containments][7][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][7][Wallpaper][org.kde.image][General]
 height=800
 width=1280
