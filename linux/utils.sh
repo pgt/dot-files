@@ -3,7 +3,7 @@
 __install_utils() {
     packages=(
 	gcc
-	build-essentials
+	build-essential
 	bash-completion
 	tree
 	htop
