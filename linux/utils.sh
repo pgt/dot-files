@@ -7,7 +7,6 @@ __install_utils() {
 	bash-completion
 	tree
 	htop
-	heroku-toolbelt
 	wget
 	node
 	imagemagick
