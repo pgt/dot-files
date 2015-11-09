@@ -1,4 +1,0 @@
-#!/bin/bash
-
-green_echo "Dock: Automatically hide and show the Dock"
-defaults write com.apple.dock autohide -bool true
