@@ -11,7 +11,6 @@ __install_utils() {
 	nodejs
 	imagemagick
 	ngrep
-	hh
 	httrack
 	unrar
 	markdown
