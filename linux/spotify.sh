@@ -10,6 +10,7 @@ __install_spotify(){
 
     wget "$url"
     sudo dpkg -i "$file"
+    # TODO: remover o pacote após instalação ser concluída!
 }
 
 __install_spotify

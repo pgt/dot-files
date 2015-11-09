@@ -4,4 +4,4 @@ __install_remmina(){
     __install remmina
 }
 
-__install_reminna
+__install_remmina

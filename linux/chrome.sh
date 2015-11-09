@@ -12,7 +12,8 @@ __install_chrome(){
     fi
 
     wget "$url"
-    sudo gdebi "$file"
+    sudo gdebi "$file" # TODO: Porque não usar o dpkg -i ao invés de gdebi aqui?
+    # TODO: I need to remove the google chrome file
 }
 
 __install_chrome
