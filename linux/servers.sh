@@ -1,44 +1,37 @@
 #!/bin/bash
 
 __install_servers(){
-    __install_mysql
+    __install_mysql # TODO: configurar um mysql.conf padrão para copiar daqui
     __install_apache
     __install_mongod
+    # __install_postgres # TODO: configurar um mysql.conf padrão para copiar daqui
 }
 
 __install_mysql(){
-    packages=(
+    local packages=(
 	mysql-server
 	mysql-client
 	libmysqlclient-dev
     )
 
-    __install $packages
-
-    return 0;
+    __install "$packages"
 }
 
 __install_apache(){
-    packages=(
+    local packages=(
 	apache2
 	libapache2-php5
     )
 
-    __install $packages
-
-    return 0;
+    __install "$packages"
 }
 
 __install_mongod(){
-    __install mongod
-
-    return 0;
+    __install mongodb
 }
 
 __install_redis(){
     __install redis-server
-
-    return 0;
 }
 
 __install_servers
