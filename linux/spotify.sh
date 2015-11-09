@@ -1,14 +1,12 @@
 #!/bin/bash
 
 __install_spotify(){
-    let url=http://repository-origin.spotify.com/pool/non-free/s/spotify-client/
-    let file=spotify-client_1.0.15.137.gbdf68615_amd64.deb
+    local url=http://repository-origin.spotify.com/pool/non-free/s/spotify-client
+    local file=spotify-client_1.0.15.137.gbdf68615_amd64.deb
 
-    wget $file
+    wget "$url$/$file"
 
-    dpkg -i spotify-client_1.0.15.137.gbdf68615_amd64.deb
-
-    return 0;
+    dpkg -i "$file"
 }
 
 __install_spotify
