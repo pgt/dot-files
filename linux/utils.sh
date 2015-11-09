@@ -25,7 +25,7 @@ __install_utils() {
 	gdebi
     )
 
-    __install $packages
+    __install "${packages[@]}"
 
     return 0;
 }
