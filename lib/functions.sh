@@ -146,11 +146,12 @@ __link_files_at_home() {
 }
 
 __update_source_list(){
+    __green_echo "Starting updating source list"
+
     sudo apt-get update \
-	 -qq `# No output except for errors` \
          -y `# Always assume yes`
 
-    let exit_status = $?
+    let exit_status=$?
 
     if [[ $exit_status > 0 ]]; then
 	__red_echo "Error on update"
@@ -166,7 +167,7 @@ __upgrade_linux(){
 	 -qq `# No output except for errors` \
          -y `# Always assume yes`
 
-    let exit_status = $?
+    let exit_status=$?
 
     if [[ $exit_status > 0 ]]; then
 	__red_echo "Error on upgrade linux"
