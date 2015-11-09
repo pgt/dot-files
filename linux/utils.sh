@@ -8,7 +8,7 @@ __install_utils() {
 	tree
 	htop
 	wget
-	node
+	nodejs
 	imagemagick
 	ngrep
 	hh
