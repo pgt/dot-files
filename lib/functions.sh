@@ -148,32 +148,38 @@ __link_files_at_home() {
 __update_source_list(){
     __green_echo "Starting updating source list"
 
-    sudo apt-get update \
-         -y `# Always assume yes`
+    set +euo
 
+    sudo apt-get -h > /dev/null 2>&1 &&
+	sudo apt-get update -y
+
+    __quit_on_error "Error on update"
+
+    set -euo pipefail
+}
+
+__quit_on_error() {
     let exit_status=$?
 
-    if [[ $exit_status > 0 ]]; then
-	__red_echo "Error on update"
+    if [ $exit_status -gt 0 ]; then
+	__red_echo "\n\n $@ ...FAIL"
+	# exit 10
     else
-	__green_echo "Successfully updated"
+	__green_echo "$@ ...OK"
     fi
 }
 
 __upgrade_linux(){
     __update_source_list
 
-    sudo apt-get upgrade \
-	 -qq `# No output except for errors` \
-         -y `# Always assume yes`
+    set +euo
 
-    let exit_status=$?
+    sudo apt-get -h > /dev/null 2>&1 &&
+	sudo apt-get upgrade -y `# Always assume yes`
 
-    if [[ $exit_status > 0 ]]; then
-	__red_echo "Error on upgrade linux"
-    else
-	__green_echo "Successfully upgrade linux"
-    fi
+    __quit_on_error "Error on upgrade linux"
+
+    set -euo pipefail
 }
 
 __upgrade_macosx(){
