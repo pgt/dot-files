@@ -14,7 +14,6 @@ __install_utils() {
 	httrack
 	unrar
 	markdown
-	gpg
 	the_silver_searcher
 	ag
 	ispell
