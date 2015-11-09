@@ -1,0 +1,4 @@
+# Now we tell Rubygems not to install the documentation for each
+# package locally and then install Bundler
+
+gem: --no-ri --no-rdoc
