@@ -334,3 +334,29 @@ __bash_version() {
 __clone_my_repositories() {
     __red_echo "Better you do manually for while, sorry dude I don't have time to finish this..."
 }
+
+# How to use:
+# service=product-manager.systemintegration.locaweb.com.br __generate_cas_ticket
+__generate_cas_ticket() {
+    #!/bin/bash
+    if [ -z "$service" ]; then
+	echo -e "\e[0;31mYou must define a service.
+ Call this script as \`service=<service-name> ./gera-ticket-cas\`\e[0m"
+	exit 1
+    fi
+
+    endpoint=https://systems-login.systemintegration.locaweb.com.br
+    username="hosting-provisioning"
+    password="inicial1234"
+
+    : ${endpoint:=https://systems-login.locaweb.com.br}
+
+    location=$(curl -vkfsD - \
+                    -X POST  \
+                    -d "username=$username" -d "password=$password" -d "domain=locaweb" \
+		    $endpoint/v1/tickets 2>&1 | grep ^Location: | cut -d\  -f2 | rev | cut -c 2- | rev)
+
+    curl -ksSd "service=$service" "$location"
+    echo
+    echo -e "\e[0;32m Ticket copied to the clipboard!\e[0m"
+}
