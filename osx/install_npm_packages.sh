@@ -2,8 +2,7 @@
 
 __install_npm_packages() {
     packages=(
-	git-open # Type `git open` to open the GitHub page or website
-		 # for a repository. TODO: I will use this?
+	git-open
 	jsontool
     )
 

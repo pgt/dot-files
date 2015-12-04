@@ -19,11 +19,10 @@ __install_utils() {
 	rar
 	unrar
 	gdebi
+	python
     )
 
     __install "${packages[@]}"
-
-    return 0;
 }
 
 __install_utils

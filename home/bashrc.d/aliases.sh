@@ -48,3 +48,6 @@ alias install_pg="gem install pg -- --with-pg-config=/Applications/Postgres.app/
 # Locaweb alias
 alias gw1='ssh -i ~/.ssh/id_rsa_gateway _ptavares@nibbler0001.linux.locaweb.com.br'
 alias gw2='ssh -i ~/.ssh/id_rsa_gateway _ptavares@nibbler0002.linux.locaweb.com.br'
+
+# Colourized JSON
+alias to_json='json | pygmentize -l json'

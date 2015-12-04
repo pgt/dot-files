@@ -22,6 +22,7 @@ __install_utils() {
 	ag
 	ispell
 	npm
+	python
     )
 
     __install "${packages_to_install[@]}"
