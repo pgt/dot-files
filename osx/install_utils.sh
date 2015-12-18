@@ -23,6 +23,7 @@ __install_utils() {
 	ispell
 	npm
 	python
+	aspell # Spell checker for emacs use
     )
 
     __install "${packages_to_install[@]}"
