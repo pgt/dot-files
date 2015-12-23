@@ -140,7 +140,7 @@ __link_files_at_home() {
 	    ln -s `# Create symbolic link` \
 	       "$HOME/code/dot-files/home/$filename" `# from ORIGIN` \
 	       "$filename" `# to DESTINATION`
-	    cd -
+	    cd - || exit
 	fi
     done
 }
