@@ -12,8 +12,8 @@ program_name="$0";
 
 __usage() {
     echo "usage: $program_name option"
-    echo "	start		       initialize program"
-    echo "	static_analysis_tool   use shellsheck to see if there's some syntax error"
+    echo -e "\t start \t\t\t initialize program"
+    echo -e "\t static_analysis_tool \t use shellsheck to see if there's some syntax error"
 }
 
 start() {
