@@ -72,7 +72,7 @@ __install_on_linux() {
 	## saved automatically in the special variable $?.
 	## Therefore, testing if its value is 0, is testing
 	## whether the last command ran correctly.
-	if [[ $exit_status_from_apt_get > 0 ]]; then
+	if [[ $exit_status_from_apt_get -gt 0 ]]; then
 	    __red_echo "Can't install the package [$package_name]"
 	else
 	    __green_echo "Succesfully installed [$package_name]"
@@ -92,7 +92,7 @@ __install_on_macosx() {
 	## saved automatically in the special variable $?.
 	## Therefore, testing if its value is 0, is testing
 	## whether the last command ran correctly.
-	if [[ $exit_status_from_brew > 0 ]]; then
+	if [[ $exit_status_from_brew -gt 0 ]]; then
 	    __red_echo "Can't install the package [$package_name]"
 	else
 	    __green_echo "Succesfully installed [$package_name]"
@@ -162,10 +162,10 @@ __quit_on_error() {
     let exit_status=$?
 
     if [ $exit_status -gt 0 ]; then
-	__red_echo "\n\n $@ ...FAIL"
+	__red_echo "\n\n $* ...FAIL"
 	# exit 10
     else
-	__green_echo "$@ ...OK"
+	__green_echo "$* ...OK"
     fi
 }
 
@@ -189,20 +189,20 @@ __upgrade_macosx(){
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     fi
 
-    __green_echo "Installing Homebrew Cask" && \
-	brew install caskroom/cask/brew-cask || true
+    __green_echo "Installing Homebrew Cask"
+    brew install caskroom/cask/brew-cask || true
 
-    __green_echo "brew update" && \
-	brew update || true
+    __green_echo "brew update"
+    brew update || true
 
-    __green_echo "brew upgrade" && \
-	brew upgrade --all || true
+    __green_echo "brew upgrade"
+    brew upgrade --all || true
 
-    __green_echo "brew cleanup" && \
-	brew cleanup || true
+    __green_echo "brew cleanup"
+    brew cleanup || true
 
-    __green_echo "brew cask cleanup" && \
-	brew cask cleanup || true
+    __green_echo "brew cask cleanup"
+    brew cask cleanup || true
 }
 
 __upgrade_system(){
@@ -295,7 +295,7 @@ __kill_macosx_affected_apps() {
 	# the app, just saying.
 	while true; do
 	    echo "Do you wish to kill [$app]? Y or N"
-	    read yn
+	    read -r yn
 
 	    case $yn in
 		[Yy]* ) killall "${app}" || true; break;;
@@ -327,7 +327,7 @@ __reload_dotfiles() {
 }
 
 __bash_version() {
-    echo $BASH_VERSION | \
+    echo "$BASH_VERSION" | \
 	head -c 1 `# Get first character`
 }
 
@@ -337,9 +337,9 @@ __clone_my_repositories() {
 
 # How to use:
 # service=product-manager.systemintegration.locaweb.com.br __generate_cas_ticket
+# TODO: This is broken i need to fix this
 __generate_cas_ticket() {
-    #!/bin/bash
-    if [ -z "$service" ]; then
+    if [ -z "$service" ]; then # TODO: How can I get the service param?
 	echo -e "\e[0;31mYou must define a service.
  Call this script as \`service=<service-name> ./gera-ticket-cas\`\e[0m"
 	exit 1

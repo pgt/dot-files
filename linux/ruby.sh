@@ -2,7 +2,7 @@
 
 # Ruby dependencies
 __install_ruby(){
-    ruby_dependencies=(
+    local ruby_dependencies=(
 	git-core
 	curl
 	zlib1g-dev
@@ -18,9 +18,7 @@ __install_ruby(){
 	libffi-dev
     )
 
-    __install $ruby_dependencies
-
-    return 0;
+    __install "${ruby_dependencies[@]}"
 }
 
 __install_ruby

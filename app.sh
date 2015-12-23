@@ -48,7 +48,7 @@ static_analysis_tool() {
 	# The OR conditional is necessary because when shellcheck
 	# find errors in a file it exists with on error status and
 	# not go to the next file
-	shellcheck "$filename" || true
+	shellcheck -x "$filename" || true
     done
 
     return 0;
@@ -69,7 +69,7 @@ __add_ssh_key() {
 
 	    echo "Add this ssh key to your github account!"
 	    cat ~/.ssh/id_rsa.pub
-	    echo "Press [Enter] to continue..." && read
+	    echo "Press [Enter] to continue..." && read -r
 	fi
     else
 	echo "Not necessary create SSH key to clone repository dot-files"

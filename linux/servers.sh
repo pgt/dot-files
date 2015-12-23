@@ -14,7 +14,7 @@ __install_mysql(){
 	libmysqlclient-dev
     )
 
-    __install "$packages"
+    __install "${packages[@]}"
 }
 
 __install_apache(){
@@ -23,7 +23,7 @@ __install_apache(){
 	libapache2-php5
     )
 
-    __install "$packages"
+    __install "${packages[@]}"
 }
 
 __install_mongod(){

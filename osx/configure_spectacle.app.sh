@@ -1,4 +1,4 @@
-# #!/bin/bash
+#!/bin/bash
 
 __configure_spectacle() {
     # __green_echo "Spectacle: Set up my preferred keyboard shortcuts"

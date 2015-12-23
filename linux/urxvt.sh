@@ -1,6 +1,6 @@
 #!/bin/bash
 
-__install_urxvt(){
+__install_urxvt() {
     # URxvt
     # mkdir -p ~/.urxvt/
     # cd ~/.urxvt/ && wget -O https://raw.githubusercontent.com/stepb/urxvt-tabbedex/master/tabbedex
@@ -9,6 +9,7 @@ __install_urxvt(){
 
     # alias start_urxvt_server = 'urxvtd -q -f -o'
     # alias myterm = 'urxvtc'
+    true;
 }
 
 __install_urxvt

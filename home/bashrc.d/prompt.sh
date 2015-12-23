@@ -1,13 +1,13 @@
 #!/bin/bash
 
 rbenv_ruby_version_func () {
-    rbenv_ruby_version="ruby-"`rbenv version | sed -e 's/ .*//'`
+    rbenv_ruby_version="ruby-$(rbenv version | sed -e 's/ .*//')"
     red="\e[1;31m"
 
-    if [ $rbenv_ruby_version == "ruby-system" ]; then
+    if [ "$rbenv_ruby_version" == "ruby-system" ]; then
 	return
     else
-	printf $red$rbenv_ruby_version
+	printf "$red$rbenv_ruby_version"
     fi
 }
 
@@ -16,7 +16,7 @@ prompt_git() {
     local branchName=""
 
     # check if the current directory is in a git repository
-    if [ $(git rev-parse --is-inside-work-tree &>/dev/null; printf "%s" $?) == 0 ]; then
+    if [ "$(git rev-parse --is-inside-work-tree &>/dev/null; printf "%s" $?)" == 0 ]; then
 
         # check if the current directory is in .git before running git checks
         if [ "$(git rev-parse --is-inside-git-dir 2> /dev/null)" == "false" ]; then
@@ -25,12 +25,12 @@ prompt_git() {
             git update-index --really-refresh  -q &>/dev/null
 
             # check for uncommitted changes in the index
-            if ! $(git diff --quiet --ignore-submodules --cached); then
+            if ! "$(git diff --quiet --ignore-submodules --cached)"; then
                 s="$s C";
             fi
 
             # check for unstaged changes
-            if ! $(git diff-files --quiet --ignore-submodules --); then
+            if ! "$(git diff-files --quiet --ignore-submodules --)"; then
                 s="$s S";
             fi
 
@@ -40,7 +40,7 @@ prompt_git() {
             fi
 
             # check for stashed files
-            if $(git rev-parse --verify refs/stash &>/dev/null); then
+            if "$(git rev-parse --verify refs/stash &>/dev/null)"; then
                 s="$s H";
             fi
 
@@ -85,12 +85,12 @@ set_prompts() {
 
         # Solarized colors
         # (https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized#the-values)
-        black=$(tput setaf 0)
+        # black=$(tput setaf 0) # unused for while
         blue=$(tput setaf 33)
         cyan=$(tput setaf 37)
         green=$(tput setaf 64)
-        orange=$(tput setaf 166)
-        purple=$(tput setaf 125)
+        # orange=$(tput setaf 166) # unused for while
+        # purple=$(tput setaf 125) # unused for while
         red=$(tput setaf 124)
         white=$(tput setaf 15)
         yellow=$(tput setaf 136)
@@ -98,12 +98,12 @@ set_prompts() {
         bold=""
         reset="\e[0m"
 
-        black="\e[1;30m"
+        # black="\e[1;30m" # unused for while
         blue="\e[1;34m"
         cyan="\e[1;36m"
         green="\e[1;32m"
-        orange="\e[1;33m"
-        purple="\e[1;35m"
+        # orange="\e[1;33m" # unused for while
+        # purple="\e[1;35m" # unused for while
         red="\e[1;31m"
         white="\e[1;37m"
         yellow="\e[1;33m"
