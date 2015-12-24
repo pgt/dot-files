@@ -24,6 +24,7 @@ __install_utils() {
 	npm
 	python
 	aspell # Spell checker for emacs use
+	freetds
     )
 
     __install "${packages_to_install[@]}"

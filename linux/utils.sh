@@ -20,6 +20,7 @@ __install_utils() {
 	unrar
 	gdebi
 	python
+	freetds-dev
     )
 
     __install "${packages[@]}"
