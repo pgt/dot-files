@@ -255,13 +255,12 @@ __install_all_packages(){
 	__install_all_macosx_packages
 
     else
+	__red_echo "This is not Linux or OSX, what are you doing with your life?"
 	exit 1; # Let's get out of this
     fi
 }
 
 __install_all_macosx_packages(){
-    pwd
-
     macosx_packages=(
 	$(find osx -name "*.sh")
     )
