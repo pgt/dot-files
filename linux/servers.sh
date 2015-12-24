@@ -20,7 +20,7 @@ __install_mysql(){
 __install_apache(){
     local packages=(
 	apache2
-	libapache2-php5
+	libapache2-mod-php5
     )
 
     __install "${packages[@]}"
