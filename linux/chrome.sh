@@ -2,6 +2,7 @@
 
 # TODO: Would be a nice feature check for dependencies before all
 # package installations (maybe use Makefile for this)
+# TODO: Verificar se já não está instalando antes de sair baixando o pacote e instalando.
 __install_chrome(){
     local file="google-chrome-stable_current_amd64.deb"
     local url="https://dl.google.com/linux/direct/$file"

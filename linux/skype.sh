@@ -1,6 +1,7 @@
 #!/bin/bash
 
 __install_skype(){
+    # TODO: Verificar se está instalado antes de baixar.
     local file="skype-ubuntu-precise_4.2.0.13-1_i386.deb"
     local url="http://download.skype.com/linux/$file"
 
