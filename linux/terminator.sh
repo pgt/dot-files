@@ -1,6 +1,7 @@
 #!/bin/bash
 
 __install_terminator(){
+    # TODO
     # Terminator
     # Terminator confs
     # ~/.config/terminator/config
