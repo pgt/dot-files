@@ -20,7 +20,7 @@ __bash_configs() {
     )
 
     for bash_option in "${bash_options[@]}"; do
-	shopt -s "$bash_option" > 2&>1 || \
+	shopt -s "$bash_option" 2>/dev/null || \
 	    __yellow_echo "The option $bash_option is only available \
 in interactive shells. Maybe your bash is old and needs some update..."
 
