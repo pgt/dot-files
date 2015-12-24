@@ -13,8 +13,11 @@ __setup() {
     for file in "${bashrc[@]}"; do
 	local bashrc_path="$HOME/bashrc.d/$file"
 
-	__green_echo "Loading file [$bashrc_path]"
+	time_before="$(date +%s)"
 	source "$bashrc_path"
+	time_total="$(($(date +%s)-time_before))"
+
+	__green_echo "Loaded file [$bashrc_path], it took ${time_total} seconds"
 	clear
     done
 }
