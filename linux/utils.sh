@@ -21,6 +21,7 @@ __install_utils() {
 	gdebi
 	python
 	freetds-dev
+	jq # command-line JSON processor
     )
 
     __install "${packages[@]}"
