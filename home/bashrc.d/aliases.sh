@@ -37,9 +37,11 @@ alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
 # Lock the screen (when going AFK)
+# TODO: This alias will break on Linux
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # Emacs GUI
+# TODO: This alias will break on Linux
 alias emacs="open -a /Applications/Emacs.app"
 
 # PG installation
@@ -50,4 +52,16 @@ alias gw1='ssh -i ~/.ssh/id_rsa_gateway _ptavares@nibbler0001.linux.locaweb.com.
 alias gw2='ssh -i ~/.ssh/id_rsa_gateway _ptavares@nibbler0002.linux.locaweb.com.br'
 
 # Colourized JSON
+# Example of use:
+# $ curl https://graph.facebook.com/v2.5/me?fields=id,name | to_json
+#
+# {
+#   "error": {
+#     "message": "An active access token must be used to query information about the current user.",
+#     "type": "OAuthException",
+#     "code": 2500,
+#     "fbtrace_id": "HMNZT6RxHBZ"
+#   }
+# }
+#
 alias to_json='json | pygmentize -l json'
