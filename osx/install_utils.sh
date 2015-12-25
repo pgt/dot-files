@@ -26,6 +26,7 @@ __install_utils() {
 	aspell # Spell checker for emacs use
 	freetds
 	jq # command-line JSON processor
+	peco # fuzzy finder for command-line
     )
 
     __install "${packages_to_install[@]}"
