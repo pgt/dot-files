@@ -1,0 +1,9 @@
+{
+    "Keymap": {
+        "C-g": "peco.Cancel",
+        "C-c": "peco.Cancel",
+	"C-k": "peco.ForwardWord",
+	"C-j": "peco.BackwardWord",
+	"C-o": "peco.KillEndOfLine"
+    }
+}
