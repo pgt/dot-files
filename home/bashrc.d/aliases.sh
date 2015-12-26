@@ -71,3 +71,6 @@ alias top_commands=history | awk '{print $2}' | awk 'BEGIN {FS="|"}{print $1}' |
 # For mistyped corrections
 alias sl=ls
 
+# Clipboard TODO: only for linux
+# alias pbcopy='xclip -selection clipboard'
+# alias pbpaste='xclip -selection clipboard -o'
