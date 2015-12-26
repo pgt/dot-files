@@ -65,3 +65,6 @@ alias gw2='ssh -i ~/.ssh/id_rsa_gateway _ptavares@nibbler0002.linux.locaweb.com.
 # }
 #
 alias to_json='json | pygmentize -l json'
+
+alias top_commands=history | awk '{print $2}' | awk 'BEGIN {FS="|"}{print $1}' | sort | uniq -c | sort -nr | head
+
