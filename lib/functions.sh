@@ -75,7 +75,7 @@ __install_on_linux() {
 	if [[ $exit_status_from_apt_get -gt 0 ]]; then
 	    __red_echo "Can't install the package [$package_name]"
 	else
-	    __green_echo "Succesfully installed [$package_name]"
+	    __green_echo "Successfully installed [$package_name]"
 	fi
     done
 }
@@ -95,7 +95,7 @@ __install_on_macosx() {
 	if [[ $exit_status_from_brew -gt 0 ]]; then
 	    __red_echo "Can't install the package [$package_name]"
 	else
-	    __green_echo "Succesfully installed [$package_name]"
+	    __green_echo "Successfully installed [$package_name]"
 	fi
     done
 }
