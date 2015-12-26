@@ -68,3 +68,6 @@ alias to_json='json | pygmentize -l json'
 
 alias top_commands=history | awk '{print $2}' | awk 'BEGIN {FS="|"}{print $1}' | sort | uniq -c | sort -nr | head
 
+# For mistyped corrections
+alias sl=ls
+
