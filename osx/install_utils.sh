@@ -27,6 +27,7 @@ __install_utils() {
 	freetds
 	jq # command-line JSON processor
 	peco # fuzzy finder for command-line
+	ack # for find filter
     )
 
     __install "${packages_to_install[@]}"
