@@ -43,6 +43,7 @@ __red_echo() {
 }
 
 __install() {
+    local platform
     platform=$(__platform)
 
     if [[ $platform = "linux" ]]; then
@@ -54,6 +55,12 @@ __install() {
     else
 	exit 1; # Let's get out of this
     fi
+}
+
+__already_installed() {
+    local app_name=$1
+
+    command -v "$app_name" && echo "installed" || echo "not_installed"
 }
 
 __install_on_linux() {
