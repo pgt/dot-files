@@ -6,9 +6,6 @@ __install_nvm() {
 
     if [[ $already_installed = "not_installed" ]]; then
 	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
-
-	__green_echo "Will be necessary reload the environment" && \
-	    source "$HOME/.bash_profile"
     else
 	__green_echo "Already installed"
     fi
