@@ -5,11 +5,7 @@ __install_golang(){
     already_installed=$(__already_installed "go")
 
     if [[ $already_installed = "not_installed" ]]; then
-	cd /tmp && curl -O https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz
-
-	sudo tar -C /usr/local -xzf /tmp/go1.4.2.linux-amd64.tar.gz
-
-	cd - || exit
+	__install golang # version 1.5.1
 
 	# Create default directories for $GOPATH
 	mkdir -p "$HOME/gocode/bin"
