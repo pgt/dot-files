@@ -1,30 +1,52 @@
 #!/bin/bash
 
-# npm is part of nodejs installation
+__install_nvm() {
+    local already_installed
+    already_installed=$(__already_installed "nvm")
+
+    if [[ $already_installed = "not_installed" ]]; then
+	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+
+	__green_echo "Will be necessary reload the environment" && \
+	    source "$HOME/.bash_profile"
+    else
+	__green_echo "Already installed"
+    fi
+}
+
 __install_nodejs() {
-    # TODO: Verificar antes se já não está instalado
-    cd /tmp && wget https://nodejs.org/dist/v5.3.0/node-v5.3.0-linux-x64.tar.gz
+    local already_installed
+    already_installed=$(__already_installed "node")
 
-    tar -xvzf node-v5.3.0-linux-x64.tar.gz
-    cd /tmp/node-v5.3.0-linux-x64 || exit
+    if [[ $already_installed = "not_installed" ]]; then
+	local nodejs_versions=(
+	    5.3
+	)
 
-    ./configure
-    make
-    sudo make install
-
-    cd - || exit
+	nvm install "${nodejs_versions[@]}"
+    else
+	__green_echo "Already installed"
+    fi
 }
 
+# npm is part of nodejs installation
 __install_npm_packages() {
-    __install_nodejs
+    local already_installed
+    already_installed=$(__already_installed "npm")
 
-    packages=(
-	git-open # Type `git open` to open the GitHub page or website
-		 # for a repository. TODO: I will use this?
-	jsontool
-    )
+    if [[ $already_installed = "not_installed" ]]; then
+	packages=(
+	    git-open # Type `git open` to open the GitHub page or website
+	    # for a repository. TODO: I will use this?
+	    jsontool
+	)
 
-    npm install -g "${packages[@]}"
+	npm install -g "${packages[@]}"
+    else
+	__green_echo "Already installed"
+    fi
 }
 
+__install_nvm
+__install_nodejs
 __install_npm_packages
