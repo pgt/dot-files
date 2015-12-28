@@ -7,7 +7,8 @@ __install_nvm() {
     if [[ $already_installed = "not_installed" ]]; then
 	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
 
-	source "$HOME/.nvm/nvm.sh"
+	export NVM_DIR=~/.nvm
+	[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
     else
 	__green_echo "Already installed"
     fi
