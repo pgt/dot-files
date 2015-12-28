@@ -1,22 +1,7 @@
 #!/bin/bash
 
 __install_rbenv(){
-    local rbenv_directory="$HOME/.rbenv"
-    local rbenv_url="git://github.com/sstephenson/rbenv.git"
-    local ruby_build_url=git://github.com/sstephenson/ruby-build.git
-    local rbenv_gem_rehash_url="https://github.com/sstephenson/rbenv-gem-rehash.git"
-
-    mkdir -p $rbenv_directory && \
-	__green_echo "Creating rbenv default directory [$rbenv_directory]"
-
-    git clone $rbenv_url .rbenv
-    git clone $ruby_build_url ~/.rbenv/plugins/ruby-build
-    git clone $rbenv_gem_rehash_url ~/.rbenv/plugins/rbenv-gem-rehash
-
-    cd ~/.rbenv && src/configure && make -C src
-    export PATH=~/.rbenv/bin:$PATH
-    eval "$(rbenv init -)"
-    cd - || exit
+    __install rbenv
 
     rbenv update
 }
