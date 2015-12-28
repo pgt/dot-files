@@ -22,6 +22,8 @@ __install_utils() {
 	python
 	freetds-dev
 	jq # command-line JSON processor
+	curl
+	libnotify-bin # For send notifications through the system
     )
 
     __install "${packages[@]}"
