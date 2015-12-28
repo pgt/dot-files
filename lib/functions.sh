@@ -60,6 +60,7 @@ __install() {
 __already_installed() {
     local app_name=$1
 
+    # This also could be [ -x "$(command -v $app_name)" ]
     command -v "$app_name" && echo "installed" || echo "not_installed"
 }
 
