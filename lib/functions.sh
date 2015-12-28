@@ -162,7 +162,9 @@ __update_source_list(){
 	ppa:synapse-core/ppa
     )
 
-    sudo add-apt-repository "${ppa_source[@]}" -y
+    for ppa in "${ppa_source[@]}"; do
+	sudo add-apt-repository "$ppa" -y
+    done
 
     __green_echo "Starting updating source list"
 
