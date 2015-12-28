@@ -33,7 +33,9 @@ __envs() {
 
     # Bash configs
     CDPATH="" # Just initializing for solve unbound variable problem
-    CDPATH="$CDPATH:$HOME/code:$HOME/Dropbox"
+    export CDPATH="$CDPATH:$HOME/code:$HOME/Dropbox"
+
+    export NVM_DIR="$HOME/.nvm"
 
     # Configuring PATH
     export PATH="$PATH:$HOME/.rbenv/shims"
