@@ -2,8 +2,6 @@
 
 __install_rbenv(){
     __install rbenv
-
-    rbenv update
 }
 
 __install_ruby_versions(){
