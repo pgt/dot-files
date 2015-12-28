@@ -153,7 +153,7 @@ __link_files_at_home() {
     done
 }
 
-__update_source_list(){
+__add_ppa_repositories() {
     __green_echo "Add PPA's to source list"
 
     local ppa_source=(
@@ -165,7 +165,9 @@ __update_source_list(){
     for ppa in "${ppa_source[@]}"; do
 	sudo add-apt-repository "$ppa" -y
     done
+}
 
+__update_source_list() {
     __green_echo "Starting updating source list"
 
     set +euo
@@ -190,6 +192,7 @@ __quit_on_error() {
 }
 
 __upgrade_linux(){
+    __add_ppa_repositories
     __update_source_list
 
     set +euo
