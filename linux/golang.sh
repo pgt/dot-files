@@ -16,4 +16,32 @@ __install_golang(){
     fi
 }
 
+__install_golang_packages() {
+    local golang_packages=(
+	# An open source framework to build and develop your
+	# applications in the Go way
+	github.com/astaxie/beego
+
+	# bee tool is a project that helps develop beego rapidly. With
+	# bee tool we can create, auto compile and reload, develop,
+	# test, and deploy beego applications easily
+	github.com/beego/bee
+
+	# Command line REPL for golang
+	github.com/motemen/gore
+
+	# Godoc extracts and generates documentation for Go programs
+	golang.org/x/tools/cmd/godoc
+
+	# Pretty print for output of golang https://github.com/k0kubun/pp
+	github.com/k0kubun/pp
+    )
+
+    for package in "${golang_packages[@]}"; do
+	go get -u `# The -u flag instructs get to use the network to update` \
+	   "$package"
+    done
+}
+
 __install_golang
+__install_golang_packages

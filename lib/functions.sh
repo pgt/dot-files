@@ -72,6 +72,7 @@ __install_on_linux() {
 	sudo apt-get install \
 	     -qq `# No output except for errors` \
 	     -y `# Always assume yes` \
+	     --force-yes `# Always assume yes` \
 	     "$package_name" `# Arg with the name of the package`
 
 	local exit_status_from_apt_get=$?
