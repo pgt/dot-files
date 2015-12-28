@@ -1,10 +1,30 @@
 #!/bin/bash
 
-__install_rbenv(){
+__install_ruby_dependencies(){
+    local ruby_dependencies=(
+	git-core
+	curl
+	zlib1g-dev
+	libssl-dev
+	libreadline-dev
+	libyaml-dev
+	libsqlite3-dev
+	sqlite3
+	libxml2-dev
+	libxslt1-dev
+	libcurl4-openssl-dev
+	python-software-properties
+	libffi-dev
+    )
+
+    __install "${ruby_dependencies[@]}"
+}
+
+__install_rbenv() {
     __install rbenv
 }
 
-__install_ruby_versions(){
+__install_ruby_versions() {
     ruby_versions=(
 	2.2.2
 	2.1.5
@@ -18,10 +38,11 @@ __install_ruby_versions(){
     done
 }
 
-__set_default_ruby_version(){
+__set_default_ruby_version() {
     rbenv global 2.2.2
 }
 
+__install_ruby_dependencies
 __install_rbenv
 __install_ruby_versions
 __set_default_ruby_version

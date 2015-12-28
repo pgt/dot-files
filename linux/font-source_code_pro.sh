@@ -1,6 +1,6 @@
 #!/bin/bash
 
-__install_fonts(){
+__install_fonts() {
     # TODO: Mandar esses arquivos para /home e só fazer aqui o fc-cache -f -v
     wget https://github.com/adobe-fonts/source-code-pro/archive/1.017R.zip
     unzip 1.017R.zip
