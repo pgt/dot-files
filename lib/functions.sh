@@ -154,6 +154,16 @@ __link_files_at_home() {
 }
 
 __update_source_list(){
+    __green_echo "Add PPA's to source list"
+
+    local ppa_source=(
+	ppa:ultradvorka/ppa
+	ppa:git-core/ppa
+	ppa:synapse-core/ppa
+    )
+
+    sudo add-apt-repository "${ppa_source[@]}" -y
+
     __green_echo "Starting updating source list"
 
     set +euo
