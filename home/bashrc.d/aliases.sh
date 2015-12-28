@@ -10,6 +10,8 @@ alias ...="cd ../.."
 # Colors
 alias ls='ls -G'
 alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
 
 alias localip="ipconfig getifaddr en1"
 
@@ -66,11 +68,16 @@ alias gw2='ssh -i ~/.ssh/id_rsa_gateway _ptavares@nibbler0002.linux.locaweb.com.
 #
 alias to_json='json | pygmentize -l json'
 
+# Show most useds commands, this allow you to make some changes like aliases to increase productivity
 alias top_commands=history | awk '{print $2}' | awk 'BEGIN {FS="|"}{print $1}' | sort | uniq -c | sort -nr | head
 
 # For mistyped corrections
 alias sl=ls
 
-# Clipboard TODO: only for linux
-# alias pbcopy='xclip -selection clipboard'
-# alias pbpaste='xclip -selection clipboard -o'
+# Clipboard: only for linux, on Mac OSX is already implemented
+[ -x "$(command -v pbcopy)" ] || alias pbcopy='xclip -selection clipboard'
+[ -x "$(command -v pbpaste)" ] || alias pbpaste='xclip -selection clipboard -o'
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
