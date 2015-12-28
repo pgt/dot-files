@@ -160,6 +160,7 @@ __add_ppa_repositories() {
 	ppa:ultradvorka/ppa
 	ppa:git-core/ppa
 	ppa:synapse-core/ppa
+	ppa:rael-gc/scudcloud
     )
 
     for ppa in "${ppa_source[@]}"; do
