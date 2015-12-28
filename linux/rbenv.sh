@@ -28,7 +28,7 @@ __install_ruby_versions() {
     ruby_versions=(
 	2.2.2
 	2.1.5
-	1.9.3
+	1.9.3-p551
     )
 
     for ruby_version in "${ruby_versions[@]}"; do
