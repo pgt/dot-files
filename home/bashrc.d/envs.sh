@@ -35,7 +35,16 @@ __envs() {
     CDPATH="" # Just initializing for solve unbound variable problem
     export CDPATH="$CDPATH:$HOME/code:$HOME/Dropbox"
 
+    # NVM(Node Version Manager)
     export NVM_DIR="$HOME/.nvm"
+
+    # Just for MacOSX, colorfy ls output
+    export CLICOLOR=1
+    export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+    # Colorfy grep without make alias
+    export GREP_OPTIONS="--color=auto"
+    export GREP_COLOR="1;35;40"
 
     # Configuring PATH
     export PATH="$PATH:$HOME/.rbenv/shims"

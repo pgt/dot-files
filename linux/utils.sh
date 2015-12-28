@@ -8,7 +8,6 @@ __install_utils() {
 	tree
 	htop
 	wget
-	nodejs
 	imagemagick
 	ngrep
 	httrack

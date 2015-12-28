@@ -8,10 +8,10 @@ alias ..="cd .."
 alias ...="cd ../.."
 
 # Colors
-alias ls='ls -G'
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
+alias ls='ls -GFh'
+# alias grep='grep --color=auto'
+# alias egrep='egrep --color=auto'
+# alias fgrep='fgrep --color=auto'
 
 alias localip="ipconfig getifaddr en1"
 
