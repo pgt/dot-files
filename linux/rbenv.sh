@@ -13,6 +13,11 @@ __install_rbenv(){
     git clone $ruby_build_url ~/.rbenv/plugins/ruby-build
     git clone $rbenv_gem_rehash_url ~/.rbenv/plugins/rbenv-gem-rehash
 
+    cd ~/.rbenv && src/configure && make -C src
+    export PATH=~/.rbenv/bin:$PATH
+    eval "$(rbenv init -)"
+    cd - || exit
+
     rbenv update
 }
 
