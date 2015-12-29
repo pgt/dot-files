@@ -655,7 +655,6 @@ cd::cd()
 }
 
 # My personal configurations
-# TODO: bind the control + T to this command, get example on hh.sh
 export ENHANCD_FILTER=peco
 export ENHANCD_COMMAND=c
 if [[ $- =~ .*i.* ]]; then bind '"\C-t": "\C-a c \C-j"'; fi

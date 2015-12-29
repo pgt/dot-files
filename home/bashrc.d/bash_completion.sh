@@ -8,7 +8,7 @@ __bash_completion() {
 	# enable programmable completion features (you don't need to enable
 	# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 	# sources /etc/bash.bashrc).
-	if ! shopt -oq posix; then # TODO: What's that means?
+	if ! shopt -oq posix; then # It's not a shell posix compliant
 	    if [ -f /usr/share/bash-completion/bash_completion ]; then
 		source /usr/share/bash-completion/bash_completion
 	    elif [ -f /etc/bash_completion ]; then

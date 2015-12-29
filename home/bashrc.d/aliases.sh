@@ -34,17 +34,14 @@ alias bi="bundle install"
 alias be="bundle exec "
 
 # View HTTP traffic
-# TODO : It's necessary to see if ngrep and tcpdump is already installed by default. I don't guess...
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
-# Lock the screen (when going AFK)
-# TODO: This alias will break on Linux
+# Lock the screen (when going AFK) only for OSX
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
-# Emacs GUI
-# TODO: This alias will break on Linux
-alias emacs="open -a /Applications/Emacs.app"
+# Emacs GUI only for OSX
+[[ $(__platform) = "macosx" ]] && alias emacs="open -a /Applications/Emacs.app"
 
 # PG installation
 alias install_pg="gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config"

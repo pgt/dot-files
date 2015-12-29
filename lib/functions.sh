@@ -315,8 +315,6 @@ __kill_macosx_affected_apps() {
     for app in "${affected_apps[@]}"; do
 	__green_echo "Killing app [$app]"
 
-	# TODO: Would be nice ask first if the user really wanna kill
-	# the app, just saying.
 	while true; do
 	    echo "Do you wish to kill [$app]? Y or N"
 	    read -r yn

@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # TODO: Start using this shit here
-# https://github.com/koalaman/shellcheck
 # https://github.com/rylnd/shpec
 # https://github.com/sstephenson/bats
 
