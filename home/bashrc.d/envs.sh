@@ -61,6 +61,7 @@ __envs() {
     export PATH="$PATH:/usr/local/heroku/bin"
     export PATH="$PATH:$GOROOT/bin"
     export PATH="$PATH:$GOPATH/bin"
+    export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
 }
 
 __envs
