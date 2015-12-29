@@ -6,6 +6,9 @@ __envs() {
     # Default editor
     export EDITOR="emacs"
 
+    # TERM
+    export TERM=xterm-256color
+
     # Locale
     export LC_ALL=en_US.utf-8
     export LANG=en_US.utf-8
