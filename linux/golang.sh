@@ -1,25 +1,25 @@
 #!/bin/bash
 
-__install_golang(){
+__install_golang() {
     local already_installed
     already_installed=$(__already_installed "go")
 
     if [[ $already_installed = "not_installed" ]]; then
 	__install golang # version 1.5.1
-
-	# Create default directories for $GOPATH
-	mkdir -p "$HOME/gocode/bin"
-	mkdir -p "$HOME/gocode/pkg"
-	mkdir -p "$HOME/gocode/src"
-
-	# Paths to Go code
-	mkdir -p /usr/local/go
-	mkdir -p "$HOME/gocode"
-	export GOROOT=/usr/local/go
-	export GOPATH=$HOME/gocode
     else
 	__green_echo "Already installed"
     fi
+
+    # Create default directories for $GOPATH
+    sudo mkdir -p "$HOME/gocode/bin"
+    sudo mkdir -p "$HOME/gocode/pkg"
+    sudo mkdir -p "$HOME/gocode/src"
+
+    # Paths to Go code
+    sudo mkdir -p /usr/local/go
+    sudo mkdir -p "$HOME/gocode"
+    export GOROOT=/usr/local/go
+    export GOPATH=$HOME/gocode
 }
 
 __install_golang_packages() {
