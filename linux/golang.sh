@@ -11,6 +11,12 @@ __install_golang(){
 	mkdir -p "$HOME/gocode/bin"
 	mkdir -p "$HOME/gocode/pkg"
 	mkdir -p "$HOME/gocode/src"
+
+	# Paths to Go code
+	mkdir -p /usr/local/go
+	mkdir -p "$HOME/gocode"
+	export GOROOT=/usr/local/go
+	export GOPATH=$HOME/gocode
     else
 	__green_echo "Already installed"
     fi
@@ -35,6 +41,10 @@ __install_golang_packages() {
 
 	# Pretty print for output of golang https://github.com/k0kubun/pp
 	github.com/k0kubun/pp
+
+	# Is a source analysis tool that answers questions about Go
+	# programs
+	golang.org/x/tools/cmd/oracle
     )
 
     for package in "${golang_packages[@]}"; do
