@@ -45,6 +45,12 @@ __install_golang_packages() {
 	# Is a source analysis tool that answers questions about Go
 	# programs
 	golang.org/x/tools/cmd/oracle
+
+	# Beego ORM
+	github.com/astaxie/beego/orm
+
+	# PG Driver
+        github.com/lib/pq
     )
 
     for package in "${golang_packages[@]}"; do
