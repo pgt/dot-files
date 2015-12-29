@@ -14,6 +14,7 @@ __install_utils() {
 	node
 	imagemagick
 	ngrep
+	tcpdump
 	the_silver_searcher
 	hh
 	httrack
