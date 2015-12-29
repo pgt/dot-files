@@ -1,11 +1,20 @@
 #!/bin/bash
 
 __install_dropbox(){
-    # TODO: Baixar o arquivo para o /tmp instalar e depois excluir o arquivo. De alguma forma verificar se foi instalado corretamente.
+    local already_installed
+    already_installed=$(__already_installed "heroku")
 
-    # cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf - # TODO: não está funcionando o tar não consegue ler o retorno do wget
-    # TODO: Verificar se tem um arquivo no ~/.dropbox-dist/dropboxd, isso confirma que foi instalado com sucesso
-    true;
+    if [[ $already_installed = "not_installed" ]]; then
+	wget "https://www.dropbox.com/download?plat=lnx.x86_64" -O "$HOME/dropbox.tar.gz"
+
+	cd "$HOME" && tar -xzf dropbox.tar.gz && rm -rf dropbox.tar.gz
+
+	~/.dropbox-dist/dropboxd &
+
+	cd - || exit
+    else
+	__green_echo "Already installed"
+    fi
 }
 
 __install_dropbox
