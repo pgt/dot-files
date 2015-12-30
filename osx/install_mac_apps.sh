@@ -1,6 +1,8 @@
 #!/bin/bash
 
 __install_mac_apps() {
+    export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
     apps=(
 	adium
 	fluid
@@ -15,13 +17,14 @@ __install_mac_apps() {
 	slack
 	emacs
 	spotify
+	telegram
+	screenhero
+	cord
 	# boot2docker
 	# vmware-fusion
 	# vagrant
 	# google-chrome
 	# firefox
-	# evernote
-	# skitch
 	# microsoft-office
     )
 
@@ -40,8 +43,4 @@ __install_mac_apps() {
 # alfred; brew cask install alfred
 # Handbrake
 
-# NOTICE: I found some issues installing apps with homebrew cask, so
-# for while we will do this manually
-#
-# __install_mac_apps
-__red_echo "I found some issues installing apps with homebrew cask, so for while we will do this manually"
+__install_mac_apps

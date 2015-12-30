@@ -51,6 +51,11 @@ __envs() {
     export GREP_OPTIONS="--color=auto"
     export GREP_COLOR="1;35;40"
 
+    # Homebrew Cask Options Other options
+    # "--caskroom=/usr/local/Caskroom" the default is
+    # /opt/homebrew-cask/
+    export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
     # Configuring PATH
     export PATH="$PATH:$HOME/.rbenv/shims"
     export PATH="$PATH:$HOME/.rbenv/shims"
