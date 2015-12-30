@@ -36,7 +36,9 @@ __envs() {
 
     # Bash configs
     CDPATH="" # Just initializing for solve unbound variable problem
-    export CDPATH="$CDPATH:$HOME/code:$HOME/Dropbox"
+    export CDPATH="$CDPATH:$HOME/code"
+    export CDPATH="$CDPATH:$HOME/Dropbox"
+    export CDPATH="$CDPATH:$HOME/gocode/src/bitbucket.org/pgtnetwork/"
 
     # NVM(Node Version Manager)
     export NVM_DIR="$HOME/.nvm"
