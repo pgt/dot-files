@@ -322,15 +322,12 @@ __kill_macosx_affected_apps() {
 	    case $yn in
 		[Yy]* ) killall "${app}" || true; break;;
 		[Nn]* ) __yellow_echo "I will not kill [$app]"; break;;
-		*) "Please answer Y or N";;
+		*) __yellow_echo "I'll take this as a no"; break;;
 	    esac
 	done
     done
 
-    __red_echo "Don't forget of the configurations on Github. Configure on file bashexports_secret.sh"
-    __red_echo "https://help.github.com/articles/generating-ssh-keys/"
-
-    __green_echo "Done. Note that some of these changes require a logout/restart to take effect."
+    __yellow_echo "Done. Note that some of these changes require a logout/restart to take effect."
 }
 
 __reload_dotfiles() {
