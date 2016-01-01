@@ -23,3 +23,6 @@ __setup() {
 }
 
 __setup
+
+# Switch project folder
+pgt-project-switch
