@@ -66,6 +66,7 @@ alias gw2='ssh -i ~/.ssh/id_rsa_gateway _ptavares@nibbler0002.linux.locaweb.com.
 alias to_json='json | pygmentize -l json'
 
 # Show most useds commands, this allow you to make some changes like aliases to increase productivity
+# TODO: Fix this command
 alias top_commands=history | awk '{print $2}' | awk 'BEGIN {FS="|"}{print $1}' | sort | uniq -c | sort -nr | head
 
 # For mistyped corrections
@@ -78,3 +79,31 @@ alias sl=ls
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# Emacs-like terminal
+# Kill helm style
+alias pgt-kill="ps aux | peco | awk '{print $2}' | grep -v PID | xargs kill -9"
+
+# Switch project helm like
+#
+# This is defined as single quote for to be evaluated when called,
+# when using double quotes is evaluated at the read time (Shellcheck
+# SC2139 https://github.com/koalaman/shellcheck/wiki/SC2139)
+alias pgt-project-switch='cd $(ls $PROJECTS | peco )'
+
+# Projectile find file
+#
+# Examples of use:
+# $ cat `ff`
+# $ rm -rf $(ff)
+# $ ff | xargs cat
+alias pgt-project-find-file="find . | grep -v .git | peco | xargs"
+# Shortest way
+alias ff=pgt-project-find-file
+
+# mx to run all commands available
+alias all_commands='$(compgen -ac | peco)'
+
+# Keep the computer wake for 1 hour
+# Only for MacOSX
+alias caffeine=caffeinate -t 3600 &
