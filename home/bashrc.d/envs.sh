@@ -56,6 +56,9 @@ __envs() {
     # /opt/homebrew-cask/
     export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+    # My default projects directories
+    export PROJECTS="$HOME/code $HOME/gocode/src/bitbucket.org/pgtnetwork/"
+
     # Configuring PATH
     export PATH="$PATH:$HOME/.rbenv/shims"
     export PATH="$PATH:$HOME/.rbenv/shims"

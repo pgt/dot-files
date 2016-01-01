@@ -1,0 +1,53 @@
+# This will not work on OSX with Iterm2, it's necessary to configure
+# iTerm options to get this shortcuts working
+
+set editing-mode emacs
+set bell-style visible
+set completion-ignore-case on
+set completion-map-case on
+set history-size -1
+set keyseq-timeout 1000
+set colored-status on
+
+# Reload the .inputrc file
+"\C-x\C-r":re-read-init-file
+
+# Show all available binds
+"\C-xh":"bind -p|peco\C-j"
+
+# Clean reset and copy from clipboard
+"\C-\M-l":"\C-a\C-kreset\C-j\pbpaste"
+
+# Navigation
+# Probably not a good idea
+# "\C-j":backward-word
+# "\C-k":forward-word
+
+# Navigation through Option Left and Option Right
+"\e[1;5C":forward-word
+"\e[1;5D":backward-word
+
+# Add sudo to current command
+"\C-hs":"\C-asudo \C-e"
+
+# Switch project
+"\C-xpp":"pgt-project-switch\C-j"
+
+# Kill process
+"\C-xk":"pgt-kill\C-j"
+
+# Project find file
+"\C-x\C-f":"$(ff)\C-j"
+
+# Bind undo to ctrl Z
+"\C-z":undo # OR use the default C-x C-u
+
+# Completes all commands that you want with TAB
+TAB:menu-complete
+
+# Go back to the last directory
+# \e is option key and Z
+"\ez":'cd -\015ls\015'
+
+# Like helm show commands
+"\ex":"$(all_commands)\C-j"
