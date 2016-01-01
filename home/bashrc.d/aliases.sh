@@ -106,4 +106,4 @@ alias all_commands='$(compgen -ac | peco)'
 
 # Keep the computer wake for 1 hour
 # Only for MacOSX
-alias caffeine=caffeinate -t 3600 &
+alias caffeine='$(caffeinate -t 3600 &)'
