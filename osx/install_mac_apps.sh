@@ -20,6 +20,7 @@ __install_mac_apps() {
 	telegram
 	screenhero
 	cord
+	handbrake
 	# boot2docker
 	# vmware-fusion
 	# vagrant
@@ -41,6 +42,5 @@ __install_mac_apps() {
 # Photoshop
 # Adobe Illustrator
 # alfred; brew cask install alfred
-# Handbrake
 
 __install_mac_apps
