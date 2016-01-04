@@ -51,6 +51,9 @@ __install_golang_packages() {
 
 	# PG Driver
         github.com/lib/pq
+
+	# A good ORM
+	github.com/jinzhu/gorm
     )
 
     for package in "${golang_packages[@]}"; do
