@@ -26,6 +26,7 @@ __install_rbenv() {
 
 __install_ruby_versions() {
     ruby_versions=(
+	2.3.0
 	2.2.2
 	2.1.5
 	1.9.3-p551
@@ -39,7 +40,7 @@ __install_ruby_versions() {
 }
 
 __set_default_ruby_version() {
-    rbenv global 2.2.2
+    rbenv global 2.3.0
 }
 
 __install_ruby_dependencies
