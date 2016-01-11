@@ -47,10 +47,6 @@ __envs() {
     export CLICOLOR=1
     export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
-    # Colorfy grep without make alias
-    export GREP_OPTIONS="--color=auto"
-    export GREP_COLOR="1;35;40"
-
     # Homebrew Cask Options Other options
     # "--caskroom=/usr/local/Caskroom" the default is
     # /opt/homebrew-cask/
@@ -71,7 +67,7 @@ __envs() {
     export PATH="$PATH:/usr/local/heroku/bin"
     export PATH="$PATH:$GOROOT/bin"
     export PATH="$PATH:$GOPATH/bin"
-    export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
+    export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.5/bin"
 }
 
 __envs
