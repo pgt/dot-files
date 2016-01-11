@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # TODO: Start using this shit here
-# https://github.com/rylnd/shpec
-# https://github.com/sstephenson/bats
+# https://github.com/sstephenson/bats https://blog.engineyard.com/2014/bats-test-command-line-tools
 
 set -euo pipefail
 
