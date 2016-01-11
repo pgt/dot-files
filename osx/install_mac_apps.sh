@@ -21,6 +21,8 @@ __install_mac_apps() {
 	screenhero
 	cord
 	handbrake
+	android-file-transfer # Transfer files from Android device
+	goofy # Client for Facebook Messenger
 	# boot2docker
 	# vmware-fusion
 	# vagrant
