@@ -54,12 +54,28 @@ __install_golang_packages() {
 
 	# A good ORM
 	github.com/jinzhu/gorm
+
+	# Vet examines Go source code and reports suspicious
+	# constructs, such as Printf calls whose arguments do not
+	# align with the format string. Vet uses heuristics that do
+	# not guarantee all reports are genuine problems, but it can
+	# find errors not caught by the compilers.
+	golang.org/x/tools/cmd/vet
     )
 
     for package in "${golang_packages[@]}"; do
 	go get -u `# The -u flag instructs get to use the network to update` \
 	   "$package"
     done
+}
+
+__install_gvm() {
+    bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+
+    gvm install go1.3.3
+    gvm install go1.5.2
+
+    gvm use go1.5.2 # --default
 }
 
 __install_golang
