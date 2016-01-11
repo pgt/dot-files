@@ -9,9 +9,9 @@ alias ...="cd ../.."
 
 # Colors
 alias ls='ls -GFh'
-# alias grep='grep --color=auto'
-# alias egrep='egrep --color=auto'
-# alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
 
 alias localip="ipconfig getifaddr en1"
 
@@ -82,7 +82,18 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # Emacs-like terminal
 # Kill helm style
-alias pgt-kill="ps aux | peco | awk '{print $2}' | grep -v PID | xargs kill -9"
+# TODO: tá dando erro
+# kill: illegal process id: pgt
+# kill: illegal process id: 0.0
+# kill: illegal process id: 0.8
+# kill: 2734592: No such process
+# kill: 67384: No such process
+# kill: illegal process id: ??
+# kill: illegal process id: S
+# kill: illegal process id: 4:24PM
+# kill: illegal process id: 0:03.70
+# kill: illegal process id: /System/Library/CoreServices/Finder.app/Contents/MacOS/Finder
+# alias pgt-kill='$(ps aux | peco)' | awk '{print $2}' | grep -v PID | xargs)
 
 # Switch project helm like
 #

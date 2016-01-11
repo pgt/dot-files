@@ -354,6 +354,12 @@ __clone_my_repositories() {
     __red_echo "Better you do manually for while, sorry dude I don't have time to finish this..."
 }
 
+# TODO: Fazer disso uma função
+__pgt-kill() {
+    # process=$(ps aux | peco)
+    true
+}
+
 # How to use:
 # service=product-manager.systemintegration.locaweb.com.br __generate_cas_ticket
 # TODO: This is broken i need to fix this
