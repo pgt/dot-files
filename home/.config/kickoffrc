@@ -6,3 +6,6 @@ loadAll=false
 
 [KRunner][PlasmaRunnerManager]
 pluginWhiteList=places,shell,services,bookmarks,recentdocuments,locations,baloosearch
+
+[RecentlyUsed]
+Applications=spotify.desktop,org.kde.klipper.desktop,org.kde.kate.desktop,keys.desktop,Mutate.desktop

@@ -1,0 +1,61 @@
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/drkonqi-rename-config-section.upd' for new updates
+2016-01-15T17:42:28 drkonqi-rename-config-section.upd: Found new update 'kde-4.11'
+2016-01-15T17:42:28 drkonqi-rename-config-section.upd: File 'drkonqirc' does not exist or empty, skipping
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/devicepreference.upd' for new updates
+2016-01-15T17:42:28 devicepreference.upd: Found new update 'DevicesMovedToPlatformPlugin'
+2016-01-15T17:42:28 devicepreference.upd: Running script 'phonon_devicepreference_update'
+2016-01-15T17:42:28 devicepreference.upd: Found new update 'DevicesUIDsChanged'
+2016-01-15T17:42:28 devicepreference.upd: Running script 'phonon_deviceuids_update'
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/amarok.upd' for new updates
+2016-01-15T17:42:28 amarok.upd: Found new update '1'
+2016-01-15T17:42:28 amarok.upd: Running script 'amarok-2.4.1-tokens_syntax_update.pl'
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/kubuntu-update-kickoff2.upd' for new updates
+2016-01-15T17:42:28 kubuntu-update-kickoff2.upd: Found new update 'kubuntu-update-kickoff'
+2016-01-15T17:42:28 kubuntu-update-kickoff2.upd: Skipping kickoffrc:Favorites:FavoriteURLs, already exists.
+2016-01-15T17:42:28 kubuntu-update-kickoff2.upd: Running script 'kubuntu-update-kickoff2.sh'
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/kioslave.upd' for new updates
+2016-01-15T17:42:28 kioslave.upd: Found new update 'kde2.2/r1'
+2016-01-15T17:42:28 kioslave.upd: File 'kioslaverc' does not exist or empty, skipping
+2016-01-15T17:42:28 kioslave.upd: Skipping update 'kde2.2/r1'
+2016-01-15T17:42:28 kioslave.upd: File 'kioslaverc' does not exist or empty, skipping
+2016-01-15T17:42:28 kioslave.upd: Found new update 'kde2.2/r2'
+2016-01-15T17:42:28 kioslave.upd: File 'kioslaverc' does not exist or empty, skipping
+2016-01-15T17:42:28 kioslave.upd: Found new update 'kde2.2/r3'
+2016-01-15T17:42:28 kioslave.upd: File 'kioslaverc' does not exist or empty, skipping
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/okular.upd' for new updates
+2016-01-15T17:42:28 okular.upd: Found new update 'sep_settings'
+2016-01-15T17:42:28 okular.upd: Updating okularpartrc:Core General:ObeyDRM to 'false'
+2016-01-15T17:42:28 okular.upd: Removing okularpartrc:General:ObeyDRM, moved.
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/kate-2.4.upd' for new updates
+2016-01-15T17:42:28 kate-2.4.upd: Found new update 'kate2.4'
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/kio_help.upd' for new updates
+2016-01-15T17:42:28 kio_help.upd: Found new update 'kde3_2'
+2016-01-15T17:42:28 kio_help.upd: Running script 'move_kio_help_cache.sh'
+2016-01-15T17:42:28 [Script] mv: cannot stat ‘/home/pgt/.kde/share/apps/kio_help/cache’: No such file or directory
+2016-01-15T17:42:28 [Script] rmdir: failed to remove ‘/home/pgt/.kde/share/apps/kio_help’: No such file or directory
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/kuriikwsfilter.upd' for new updates
+2016-01-15T17:42:28 kuriikwsfilter.upd: Found new update 'post-kde3.1/cvs'
+2016-01-15T17:42:28 kuriikwsfilter.upd: Found new update 'pre-kde4.9'
+2016-01-15T17:42:28 kuriikwsfilter.upd: Skipping kuriikwsfilterrc:General:DefaultWebShortcut, already exists.
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/ksslcertificatemanager.upd' for new updates
+2016-01-15T17:42:28 ksslcertificatemanager.upd: Found new update 'kde4.2'
+2016-01-15T17:42:28 ksslcertificatemanager.upd: Running script 'ksslcertificatemanager.upd.sh'
+2016-01-15T17:42:28 [Script] rm: cannot remove ‘/home/pgt/.kde//share/config/ksslcertificatemanager’: No such file or directory
+2016-01-15T17:42:28 ksslcertificatemanager.upd: !! An error occurred while running 'sh /usr/share/kde4/apps/kconf_update/ksslcertificatemanager.upd.sh'
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/kcookiescfg.upd' for new updates
+2016-01-15T17:42:28 kcookiescfg.upd: Found new update 'kde2.2/b1'
+2016-01-15T17:42:28 kcookiescfg.upd: File 'kcookiejarrc' does not exist or empty, skipping
+2016-01-15T17:42:28 kcookiescfg.upd: Found new update 'kde3.1/cvs'
+2016-01-15T17:42:28 kcookiescfg.upd: File 'kcookiejarrc' does not exist or empty, skipping
+2016-01-15T17:42:28 kcookiescfg.upd: Found new update 'kde4.10/git'
+2016-01-15T17:42:28 kcookiescfg.upd: File 'kcookiejarrc' does not exist or empty, skipping
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/kubuntu-fix-kwin-default-size.upd' for new updates
+2016-01-15T17:42:28 kubuntu-fix-kwin-default-size.upd: Found new update 'kubuntu-fix-kwin-default-size'
+2016-01-15T17:42:28 kubuntu-fix-kwin-default-size.upd: File 'kwinrulesrc' does not exist or empty, skipping
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/kded.upd' for new updates
+2016-01-15T17:42:28 kded.upd: Found new update 'kde3.0'
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/kwallet-4.13.upd' for new updates
+2016-01-15T17:42:28 kwallet-4.13.upd: Found new update 'kde4.13'
+2016-01-15T17:42:28 Checking update-file '/usr/share/kde4/apps/kconf_update/disable_kmix.upd' for new updates
+2016-01-15T17:42:28 disable_kmix.upd: Found new update 'PlasmaVolume_DisableKMixAutostart'
+2016-01-15T17:42:28 disable_kmix.upd: Running script 'plasmaVolumeDisableKMixAutostart.pl'

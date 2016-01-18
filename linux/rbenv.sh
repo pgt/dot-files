@@ -15,6 +15,7 @@ __install_ruby_dependencies(){
 	libcurl4-openssl-dev
 	python-software-properties
 	libffi-dev
+	ruby-build
     )
 
     __install "${ruby_dependencies[@]}"

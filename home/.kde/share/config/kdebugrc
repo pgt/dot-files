@@ -1,2 +1,8 @@
 [KSharedDataCache]
 InfoOutput=4
+
+[kdialog]
+InfoOutput=4
+
+[kio_trash]
+InfoOutput=4

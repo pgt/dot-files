@@ -1,0 +1,262 @@
+[AudioDevice_/org/kde/solid/udev/sys/devices/pci0000:00/0000:00:03.0/sound/card0/pcmC0D3p:playback]
+cardName=HDA Intel HDMI (HDMI 0)
+deleted=false
+deviceNumber=3
+hotpluggable=false
+iconName=audio-card
+index=-2
+initialPreference=33
+isAdvanced=true
+
+[AudioDevice_/org/kde/solid/udev/sys/devices/pci0000:00/0000:00:03.0/sound/card0/pcmC0D7p:playback]
+cardName=HDA Intel HDMI (HDMI 1)
+deleted=false
+deviceNumber=7
+hotpluggable=false
+iconName=audio-card
+index=-17
+initialPreference=29
+isAdvanced=true
+
+[AudioDevice_/org/kde/solid/udev/sys/devices/pci0000:00/0000:00:03.0/sound/card0/pcmC0D8p:playback]
+cardName=HDA Intel HDMI (HDMI 2)
+deleted=false
+deviceNumber=8
+hotpluggable=false
+iconName=audio-card
+index=-18
+initialPreference=28
+isAdvanced=true
+
+[AudioDevice_/org/kde/solid/udev/sys/devices/pci0000:00/0000:00:1b.0/sound/card1/pcmC1D0c:capture]
+cardName=HDA Intel PCH (ALC3234 Analog)
+deleted=false
+deviceNumber=0
+hotpluggable=false
+iconName=audio-card
+index=-19
+initialPreference=36
+isAdvanced=false
+
+[AudioDevice_/org/kde/solid/udev/sys/devices/pci0000:00/0000:00:1b.0/sound/card1/pcmC1D0p:playback]
+cardName=HDA Intel PCH (ALC3234 Analog)
+deleted=false
+deviceNumber=0
+hotpluggable=false
+iconName=audio-card
+index=-1
+initialPreference=36
+isAdvanced=false
+
+[AudioDevice_HDA Intel HDMI, HDMI 0\nDirect hardware device without any conversions_playback]
+cardName=HDA Intel HDMI, HDMI 0 (Direct hardware device without any conversions)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-16
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel HDMI, HDMI 0\nDirect sample mixing device_playback]
+cardName=HDA Intel HDMI, HDMI 0 (Direct sample mixing device)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-11
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel HDMI, HDMI 0\nHDMI Audio Output_playback]
+cardName=HDA Intel HDMI, HDMI 0 (HDMI Audio Output)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-8
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel HDMI, HDMI 0\nHardware device with all software conversions_playback]
+cardName=HDA Intel HDMI, HDMI 0 (Hardware device with all software conversions)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-15
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel HDMI, HDMI 1\nDirect hardware device without any conversions_playback]
+cardName=HDA Intel HDMI, HDMI 1 (Direct hardware device without any conversions)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-12
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel HDMI, HDMI 1\nDirect sample mixing device_playback]
+cardName=HDA Intel HDMI, HDMI 1 (Direct sample mixing device)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-5
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel HDMI, HDMI 1\nHDMI Audio Output_playback]
+cardName=HDA Intel HDMI, HDMI 1 (HDMI Audio Output)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-7
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel HDMI, HDMI 1\nHardware device with all software conversions_playback]
+cardName=HDA Intel HDMI, HDMI 1 (Hardware device with all software conversions)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-14
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel HDMI, HDMI 2\nDirect hardware device without any conversions_playback]
+cardName=HDA Intel HDMI, HDMI 2 (Direct hardware device without any conversions)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-9
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel HDMI, HDMI 2\nDirect sample mixing device_playback]
+cardName=HDA Intel HDMI, HDMI 2 (Direct sample mixing device)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-10
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel HDMI, HDMI 2\nHDMI Audio Output_playback]
+cardName=HDA Intel HDMI, HDMI 2 (HDMI Audio Output)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-3
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel HDMI, HDMI 2\nHardware device with all software conversions_playback]
+cardName=HDA Intel HDMI, HDMI 2 (Hardware device with all software conversions)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-6
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel PCH, ALC3234 Analog\nDefault Audio Device_capture]
+cardName=HDA Intel PCH, ALC3234 Analog (Default Audio Device)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-20
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel PCH, ALC3234 Analog\nDirect hardware device without any conversions_capture]
+cardName=HDA Intel PCH, ALC3234 Analog (Direct hardware device without any conversions)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-25
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel PCH, ALC3234 Analog\nDirect sample snooping device_capture]
+cardName=HDA Intel PCH, ALC3234 Analog (Direct sample snooping device)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-24
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_HDA Intel PCH, ALC3234 Analog\nHardware device with all software conversions_capture]
+cardName=HDA Intel PCH, ALC3234 Analog (Hardware device with all software conversions)
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-22
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_Playback/recording through the PulseAudio sound server_capture]
+cardName=Playback/recording through the PulseAudio sound server
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-21
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_Playback/recording through the PulseAudio sound server_playback]
+cardName=Playback/recording through the PulseAudio sound server
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-4
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_PulseAudio Sound Server_capture]
+cardName=PulseAudio Sound Server
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-23
+initialPreference=30
+isAdvanced=false
+
+[AudioDevice_PulseAudio Sound Server_playback]
+cardName=PulseAudio Sound Server
+deleted=false
+deviceNumber=-1
+hotpluggable=false
+iconName=audio-card
+index=-13
+initialPreference=30
+isAdvanced=false
+
+[Globals]
+nextIndex=27
+
+[VideoDevice_/org/kde/solid/udev/sys/devices/pci0000:00/0000:00:1d.0/usb3/3-1/3-1.8/3-1.8:1.0/video4linux/video0]
+cardName=Integrated_Webcam_HD
+deleted=false
+deviceNumber=-1
+hotpluggable=true
+iconName=camera-web
+index=-26
+initialPreference=50
+isAdvanced=false

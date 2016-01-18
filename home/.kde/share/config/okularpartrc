@@ -1,0 +1,8 @@
+[$Version]
+update_info=okular.upd:sep_settings
+
+[Core General]
+ObeyDRM=false
+
+[General]
+ObeyDRM[$d]

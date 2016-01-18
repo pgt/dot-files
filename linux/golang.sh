@@ -78,5 +78,5 @@ __install_gvm() {
     gvm use go1.5.2 # --default
 }
 
-__install_golang
-__install_golang_packages
+#__install_golang
+#__install_golang_packages

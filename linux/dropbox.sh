@@ -2,7 +2,7 @@
 
 __install_dropbox(){
     local already_installed
-    already_installed=$(__already_installed "heroku")
+    already_installed=$(__already_installed "dropbox")
 
     if [[ $already_installed = "not_installed" ]]; then
 	wget "https://www.dropbox.com/download?plat=lnx.x86_64" -O "$HOME/dropbox.tar.gz"

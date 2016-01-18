@@ -1,0 +1,5 @@
+[Default Applications]
+x-scheme-handler/magnet=userapp-transmission-gtk-I5HBBY.desktop
+
+[Added Associations]
+x-scheme-handler/magnet=userapp-transmission-gtk-I5HBBY.desktop;

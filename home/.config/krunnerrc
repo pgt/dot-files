@@ -1,2 +1,6 @@
+[General]
+history=settings,terminator,dropbo,emacs,chrome,spotify,acti,emac,termina,chr,setting
+
 [PlasmaRunnerManager]
-LaunchCounts=
+LaunchCounts=1 recentdocuments_file:///home/pgt/code/dot-files/linux/terminator.sh,1 windows_0_23068807,1 services_google-chrome.desktop,1 services_emacs24.desktop,1 services_terminator.desktop,1 services_systemsettings.desktop,1 services_powerdevilactivitiesconfig.desktop,1 services_spotify.desktop
+enabledCategories=Activities,Applications,Calculator,Command Line,Control Audio Player,Date and Time,Desktop Sessions,Dictionary,Folder,Locations,Places,Power,Recent Documents,Spell Checker,System Settings,Terminate Applications,Unit Converter,Video,Web Shortcuts,Windowed widgets,Windows

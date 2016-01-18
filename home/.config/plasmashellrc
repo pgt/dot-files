@@ -1,5 +1,47 @@
+[Containments][1][General]
+AppletOrder=2;3;5;6;21;22;23;24;25;26;27
+
+[Containments][28][General]
+AppletOrder=29;30;31;55;52;49;56;32;33;54;51;70
+
+[Containments][67][General]
+AppletOrder=69
+
+[KFileDialog Settings]
+Recent Files[$e]=wallpaper.jpg,$HOME/Downloads/stock-photo-113171905.jpg,$HOME/Downloads/wallpaper.jpg
+Recent URLs[$e]=$HOME/Downloads/,$HOME/Downloads/
+
+[PlasmaRunnerManager]
+LaunchCounts=1 services_spotify.desktop
+pluginWhiteList=services,bookmarks,baloosearch
+
 [PlasmaViews][Panel 1][Horizontal1280]
-thickness=30
+thickness[$d]
 
 [PlasmaViews][Panel 1][Horizontal800]
+thickness[$d]
+
+[PlasmaViews][Panel 28][Horizontal1366]
+thickness[$d]
+
+[PlasmaViews][Panel 67][Horizontal1366]
+length[$d]
+maxLength[$d]
+minLength[$d]
+offset[$d]
+panelVisibility[$d]
+thickness[$d]
+
+[PlasmaViews][Panel 72][Horizontal1366]
+alignment=1
+panelVisibility=0
 thickness=27
+
+[PlasmaViews][Panel 95][Horizontal1366]
+alignment=132
+length=1298
+maxLength=1318
+minLength=1298
+offset=0
+panelVisibility=1
+thickness=54

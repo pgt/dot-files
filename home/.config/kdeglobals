@@ -103,6 +103,11 @@ Theme=breeze
 
 [KDE]
 ColorScheme=Breeze
+DoubleClickInterval=400
+SingleClick=true
+StartDragDist=4
+StartDragTime=500
+WheelScrollLines=3
 contrast=4
 widgetStyle=Breeze
 
@@ -121,9 +126,12 @@ Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort reversed=false
-Speedbar Width=87
+Speedbar Width=102
 View Style=Simple
 listViewIconSize=0
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
 
 [WM]
 activeBackground=71,80,87

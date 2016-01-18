@@ -6,6 +6,12 @@ _k_friendly_name=KDE Daemon
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=kaccess
 
+[kcm_touchpad]
+Disable Touchpad=,ៀ?,Disable Touchpad
+Enable Touchpad=none,ៀ?,Enable Touchpad
+Toggle Touchpad=none,ៀ?,Toggle Touchpad
+_k_friendly_name=KDE Daemon
+
 [kded5]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
 Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Decrease Screen Brightness
@@ -21,8 +27,19 @@ display=Display,Display,Switch Display
 
 [khotkeys]
 _k_friendly_name=KDE Daemon
-{40074c78-f86d-4eb1-b428-91eb8b116ef3}=Print,none,PrintScreen
+{572fba25-0b3a-4026-928e-474efdaae9b3}=none,none,PrintScreen
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
+
+[klipper]
+_k_friendly_name=Klipper
+clear-history=none,none,Clear Clipboard History
+clipboard_action=,Ctrl+Alt+X,Enable Clipboard Actions
+cycleNextAction=none,none,Next History Item
+cyclePrevAction=none,none,Previous History Item
+edit_clipboard=none,none,Edit Contents...
+repeat_action=,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
+show-barcode=none,none,Show Barcode...
+show-on-mouse-pos=none,none,Open Klipper at Mouse Position
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -191,9 +208,17 @@ view_actual_size=Meta+0,Meta+0,Actual Size
 view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
+[mediacontrol]
+_k_friendly_name=mediacontrol
+nextmedia=Media Next,Media Next,Media playback next
+playpausemedia=Media Play,Media Play,Play/Pause media playback
+previousmedia=Media Previous,Media Previous,Media playback previous
+stopmedia=Media Stop,Media Stop,Stop media playback
+
 [plasmashell]
 _k_friendly_name=Plasma
-activate widget 2=Alt+F1,none,Activate Application Launcher Widget
+activate widget 59=Meta+Space,none,Activate Application Dashboard Widget
+activate widget 73=Alt+F1,none,Activate Application Launcher Widget
 clear-history=none,none,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item
@@ -205,5 +230,5 @@ previous activity=Meta+Shift+Tab,none,Walk through activities (Reverse)
 repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
 show dashboard=Ctrl+F12,Ctrl+F12,Show Dashboard
 show-barcode=none,none,Show Barcode...
-show-on-mouse-pos=none,none,Open Klipper at Mouse Position
+show-on-mouse-pos=Ctrl+Shift+V,none,Open Klipper at Mouse Position
 stop current activity=Meta+S,Meta+S,Stop Current Activity

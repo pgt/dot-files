@@ -2,6 +2,4 @@
 
 __install_pgadmin(){
     __install pgadmin3
-
-    return 0;
 }
