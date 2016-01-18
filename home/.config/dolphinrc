@@ -2,6 +2,10 @@
 Version=200
 ViewPropsTimestamp=2015,11,4,15,4,41
 
+[KPropertiesDialog]
+Height 768=473
+Width 1366=420
+
 [MainWindow]
 Height 600=500
 MenuBar=Disabled

@@ -4,5 +4,8 @@ InfoOutput=4
 [kdialog]
 InfoOutput=4
 
+[kio (delegateanimationhandler)]
+InfoOutput=4
+
 [kio_trash]
 InfoOutput=4

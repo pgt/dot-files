@@ -1,6 +1,6 @@
 [General]
-history=emacs,settings,setting,keyboard,keyboard layout,keyboa,shortcuts,terminator,dropbo,chrome,spotify,acti,emac,termina,chr
+history=dolphin,setting,scud,system set,forti,terminator,keyboard,chrome,spotify,emacs,settings,keyboard layout,keyboa,shortcuts,dropbo,acti,emac,termina,chr
 
 [PlasmaRunnerManager]
-LaunchCounts=1 recentdocuments_file:///home/pgt/code/dot-files/linux/terminator.sh,1 windows_0_23068807,1 services_google-chrome.desktop,1 services_emacs24.desktop,1 services_terminator.desktop,1 services_systemsettings.desktop,1 services_powerdevilactivitiesconfig.desktop,1 services_spotify.desktop
+LaunchCounts=1 recentdocuments_file:///home/pgt/code/dot-files/linux/terminator.sh,3 services_keys.desktop,1 recentdocuments_file:///home/pgt/Dropbox,1 services_systemsettings.desktop,3 services_kcm_keyboard.desktop,1 windows_0_125829125,2 services_emacs24.desktop,1 services_powerdevilactivitiesconfig.desktop,1 services_spotify.desktop,1 services_terminator.desktop,3 services_standard_actions.desktop,1 services_google-chrome.desktop,1 windows_0_23068807,2 windows_0_90177671
 enabledCategories=Activities,Applications,Calculator,Command Line,Control Audio Player,Date and Time,Desktop Sessions,Dictionary,Folder,Locations,Places,Power,Recent Documents,Spell Checker,System Settings,Terminate Applications,Unit Converter,Video,Web Shortcuts,Windowed widgets,Windows

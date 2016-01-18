@@ -92,6 +92,7 @@ ForegroundPositive=39,174,96
 ForegroundVisited=127,140,141
 
 [General]
+BrowserApplication=google-chrome.desktop
 ColorScheme=Default
 Name=Breeze
 XftAntialias=true

@@ -11,7 +11,7 @@ TabBox=false
 TabBoxAlternative=false
 
 [Effect-FlipSwitch]
-TabBox=true
+TabBox=false
 TabBoxAlternative=false
 
 [Effect-Zoom]
@@ -53,7 +53,7 @@ ActivitiesMode=1
 ApplicationsMode=0
 DesktopMode=1
 HighlightWindows=true
-LayoutName=present_windows
+LayoutName=big_icons
 MinimizedMode=0
 MultiScreenMode=0
 ShowDesktopMode=1
