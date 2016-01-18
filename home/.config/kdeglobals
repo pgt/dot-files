@@ -133,6 +133,33 @@ listViewIconSize=0
 [KShortcutsDialog Settings]
 Dialog Size=600,480
 
+[Shortcuts]
+AddBookmark=
+BackwardWord=Alt+B
+Begin=Meta+<
+BeginningOfLine=Ctrl+A
+Close=Meta+W
+Copy=Meta+C
+Cut=Meta+X
+DeleteWordForward=
+EndOfLine=Ctrl+E
+Find=Ctrl+S
+GotoLine=Meta+L
+New=Alt+N
+Open=Meta+O
+Paste=Meta+V
+Print=Meta+P
+Quit=Meta+Q
+Redo=Meta+Shift+Z
+Reload=Meta+R
+Replace=
+Save=Meta+S
+SaveAs=Meta+Shift+S
+SelectAll=Meta+A
+Spelling=Meta+?
+TextCompletion=
+Undo=Meta+Z
+
 [WM]
 activeBackground=71,80,87
 activeBlend=255,255,255

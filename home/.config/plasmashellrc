@@ -7,6 +7,9 @@ AppletOrder=29;30;31;55;52;49;56;32;33;54;51;70
 [Containments][67][General]
 AppletOrder=69
 
+[Containments][95][General]
+AppletOrder=97
+
 [KFileDialog Settings]
 Recent Files[$e]=wallpaper.jpg,$HOME/Downloads/stock-photo-113171905.jpg,$HOME/Downloads/wallpaper.jpg
 Recent URLs[$e]=$HOME/Downloads/,$HOME/Downloads/
@@ -38,10 +41,10 @@ panelVisibility=0
 thickness=27
 
 [PlasmaViews][Panel 95][Horizontal1366]
-alignment=132
-length=1298
-maxLength=1318
-minLength=1298
-offset=0
-panelVisibility=1
-thickness=54
+alignment[$d]
+length[$d]
+maxLength[$d]
+minLength[$d]
+offset[$d]
+panelVisibility[$d]
+thickness[$d]
