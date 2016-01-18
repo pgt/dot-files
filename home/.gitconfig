@@ -3,3 +3,5 @@
 # Please adapt and uncomment the following lines:
 	name = Pedro Gomes Tavares
 	email = pgtnetwork@gmail.com
+[core]
+	editor = emacs

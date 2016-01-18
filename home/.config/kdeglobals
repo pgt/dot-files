@@ -1,3 +1,6 @@
+[Appmenu Style]
+Style=InApplication
+
 [ColorEffects:Disabled]
 Color=56,56,56
 ColorAmount=0
@@ -89,7 +92,7 @@ ForegroundPositive=39,174,96
 ForegroundVisited=127,140,141
 
 [General]
-ColorScheme=Breeze
+ColorScheme=Default
 Name=Breeze
 XftAntialias=true
 XftHintStyle=hintmedium
@@ -104,12 +107,14 @@ Theme=breeze
 [KDE]
 ColorScheme=Breeze
 DoubleClickInterval=400
+ShowIconsInMenuItems=true
+ShowIconsOnPushButtons=true
 SingleClick=true
 StartDragDist=4
 StartDragTime=500
 WheelScrollLines=3
 contrast=4
-widgetStyle=Breeze
+widgetStyle=breeze
 
 [KFileDialog Settings]
 Automatically select filename extension=true
@@ -159,6 +164,10 @@ SelectAll=Meta+A
 Spelling=Meta+?
 TextCompletion=
 Undo=Meta+Z
+
+[Toolbar style]
+ToolButtonStyle=TextBesideIcon
+ToolButtonStyleOtherToolbars=TextBesideIcon
 
 [WM]
 activeBackground=71,80,87
