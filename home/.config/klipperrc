@@ -26,5 +26,5 @@ Width 1366=676
 [General]
 AutoStart=true
 Number of Actions=0
-URLGrabberEnabled=true
+URLGrabberEnabled=false
 Version=5.4.2

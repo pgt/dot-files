@@ -5,3 +5,7 @@ home/.config/spotify
 /home/.config/scudcloud
 home/.config/pulse
 home/.config/session
+/home/.kde/share/apps/RecentDocuments
+/home/.config/trashrc
+/home/.config/notificationhelper
+/home/.config/htop/htoprc

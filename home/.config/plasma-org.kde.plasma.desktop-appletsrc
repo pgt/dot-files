@@ -66,7 +66,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][7][General]
-ItemsGeometries=Applet-48:1088,416,256,288,0;Applet-58:0,48,288,272,0;Applet-59:32,576,112,96,0;Applet-60:1104,32,240,256,0;Applet-64:1072,272,240,112,0;
+ItemsGeometries=Applet-48:1088,416,256,288,0;Applet-58:0,48,288,272,0;Applet-59:32,576,112,96,0;Applet-60:1104,48,240,256,0;Applet-64:1072,272,240,112,0;
 ToolBoxButtonState=left
 ToolBoxButtonY=148
 

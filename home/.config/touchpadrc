@@ -1,7 +1,7 @@
 [parameters]
 CircScrollDelta=6
-FingerHigh=59
-FingerLow=48
+FingerHigh=11
+FingerLow=1
 HorizScrollDelta=2.6
 MaxTapMove=4
 Tapping=false
