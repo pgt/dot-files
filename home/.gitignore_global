@@ -1,8 +1,11 @@
 # OSX taken from: https://github.com/github/gitignore/blob/master/Global/OSX.gitignore
 # ----------------------------------------------------------------------------------------------
 .DS_Store
+*.DS_Store
+
 # Thumbnails
 ._*
+
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
@@ -35,3 +38,7 @@ Session.vim
 .idea
 .idea/
 .idea/*
+
+# Tern files
+tern
+*tern

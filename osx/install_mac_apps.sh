@@ -23,6 +23,7 @@ __install_mac_apps() {
 	handbrake
 	android-file-transfer # Transfer files from Android device
 	goofy # Client for Facebook Messenger
+	grammarly # English study
 	# boot2docker
 	# vmware-fusion
 	# vagrant

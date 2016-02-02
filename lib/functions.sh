@@ -11,8 +11,6 @@ __green_echo() {
 	 "[$(date +"%Y-%m-%d %H:%M:%S %Z")] " \
 	 "[FUNCTION: $function_callee] " \
 	 "$message ${reset}"
-
-    return 0;
 }
 
 __yellow_echo() {
