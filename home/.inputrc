@@ -42,9 +42,6 @@ set colored-status on
 # Bind undo to ctrl Z
 "\C-z":undo # OR use the default C-x C-u
 
-# Completes all commands that you want with TAB
-TAB:menu-complete
-
 # Go back to the last directory
 # \e is option key and Z
 "\ez":'cd -\015ls\015'
