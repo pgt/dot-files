@@ -72,8 +72,9 @@ function __update_gem(){
     }
 
     __commit__() {
+	__green_echo "Generating commit with the message - Update $outdated_gem dependency."
 	git add Gemfile.lock
-	git commit -m "Update \`$outdated_gem\` dependency." --quiet
+	git commit -m "Update \`$outdated_gem\` dependency." --quiet || __green_echo "This gem $outdated_gem probably was already updated."
     }
 
     for gem in "$@"; do
