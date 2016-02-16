@@ -68,6 +68,7 @@ __envs() {
     export PATH="$PATH:$GOROOT/bin"
     export PATH="$PATH:$GOPATH/bin"
     export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.5/bin"
+    export PATH="$PATH:$HOME/code/dot-files/bin"
 }
 
 __envs

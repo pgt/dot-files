@@ -360,9 +360,8 @@ __pgt-kill() {
 
 # How to use:
 # service=product-manager.systemintegration.locaweb.com.br __generate_cas_ticket
-# TODO: This is broken i need to fix this
 __generate_cas_ticket() {
-    if [ -z "$service" ]; then # TODO: How can I get the service param?
+    if [ -z "$service" ]; then
 	echo -e "\e[0;31mYou must define a service.
  Call this script as \`service=<service-name> ./gera-ticket-cas\`\e[0m"
 	exit 1
