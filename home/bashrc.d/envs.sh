@@ -69,6 +69,7 @@ __envs() {
     export PATH="$PATH:$GOPATH/bin"
     export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.5/bin"
     export PATH="$PATH:$HOME/code/dot-files/bin"
+    export PATH="$PATH:/Applications/MAMP/Library/bin/mysql"
 
     # Rails spring turn it off forever :)
     export DISABLE_SPRING=true
