@@ -24,6 +24,7 @@ __install_mac_apps() {
 	android-file-transfer # Transfer files from Android device
 	goofy # Client for Facebook Messenger
 	grammarly # English study
+	itsycal # Calendar in the menu bar
 	# boot2docker
 	# vmware-fusion
 	# vagrant
