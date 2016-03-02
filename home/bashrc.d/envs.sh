@@ -26,7 +26,6 @@ __envs() {
 
     # Make new shells get the history lines from all previous
     # shells instead of the default "last window closed" history
-    export PROMPT_COMMAND="" # Just initializing for solve unbound variable problem
     export PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
 
     # Paths to Go code
@@ -35,7 +34,6 @@ __envs() {
     export GOPATH=$HOME/gocode
 
     # Bash configs
-    CDPATH="" # Just initializing for solve unbound variable problem
     export CDPATH="$CDPATH:$HOME/code"
     export CDPATH="$CDPATH:$HOME/Dropbox"
     export CDPATH="$CDPATH:$HOME/gocode/src/bitbucket.org/pgtnetwork/"
