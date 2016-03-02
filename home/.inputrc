@@ -43,7 +43,7 @@ set colored-status on
 "\C-x,a":"be rspec spec\C-j"
 
 # Run tests from a file
-"\C-x,v":"be rspec $(pgt-project-find-file)\C-j"
+"\C-x,v":"be rspec $(pgt-find-spec)\C-j"
 
 # Bind undo to ctrl Z
 "\C-z":undo # OR use the default C-x C-u

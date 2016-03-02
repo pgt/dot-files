@@ -99,7 +99,7 @@ alias pgt-project-switch='cd $(ls $PROJECTS | peco )'
 # $ rm -rf $(ff)
 # $ ff | xargs cat
 alias pgt-project-find-file="find . | grep -v .git | peco | xargs"
-alias pgt-project-find-spec="find ./spec | grep -v .git | peco | xargs"
+alias pgt-find-spec="find ./spec -name '*.rb' | grep -v .git | peco | xargs"
 
 # mx to run all commands available
 alias all_commands='$(compgen -ac | peco)'
