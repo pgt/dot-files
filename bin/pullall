@@ -1,0 +1,21 @@
+#!/bin/bash
+# Usage: pullall [DIRECTORY]
+#
+# Performs 'git pull' on several repositories under the given DIRECTORY.
+set -e
+
+target=${1:-code}
+root="$HOME/code"
+pattern=$root
+
+if [[ ! -d $root ]]; then
+  echo "'$target' is not a directory."
+  exit 0
+fi
+
+for repo in $(ls -d -1 $pattern/*/.git 2>/dev/null); do
+  dir=${repo/\/.git//}
+  name=${dir/$root\//}
+  echo "pulling ${name%?}..."
+  pushd $dir > /dev/null; git pull -q 1> /dev/null; popd > /dev/null
+done
