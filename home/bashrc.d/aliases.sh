@@ -85,12 +85,10 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # Alerts for Mac
 alias ialert='terminal-notifier -title "Terminal" -message "Done with task!"'
 
-# Switch project helm like
-#
 # This is defined as single quote for to be evaluated when called,
 # when using double quotes is evaluated at the read time (Shellcheck
 # SC2139 https://github.com/koalaman/shellcheck/wiki/SC2139)
-alias pgt-project-switch='cd $(ls $PROJECTS | peco )'
+alias pgt-project-switch='cd $(pgt-project-directory)'
 
 # Projectile find file
 #
