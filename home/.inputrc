@@ -37,7 +37,13 @@ set colored-status on
 "\C-xk":"pgt-kill\C-j"
 
 # Project find file
-"\C-x\C-f":"$(ff)\C-j"
+"\C-x\C-f":"$(pgt-project-find-file)\C-j"
+
+# Run all tests from project
+"\C-x,a":"be rspec spec\C-j"
+
+# Run tests from a file
+"\C-x,v":"be rspec $(pgt-project-find-file)\C-j"
 
 # Bind undo to ctrl Z
 "\C-z":undo # OR use the default C-x C-u
