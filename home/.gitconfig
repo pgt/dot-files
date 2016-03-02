@@ -5,3 +5,4 @@
 	email = pgtnetwork@gmail.com
 [core]
 	editor = emacs
+	excludesfile = /home/pgt/.gitignore

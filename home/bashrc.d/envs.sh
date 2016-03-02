@@ -26,7 +26,7 @@ __envs() {
 
     # Make new shells get the history lines from all previous
     # shells instead of the default "last window closed" history
-    export PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
+    export PROMPT_COMMAND="history -a; history -n;"
 
     # Paths to Go code
     export GOROOT=/usr/local/go
