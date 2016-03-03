@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Return the directory to make the switch
+#
+__pgt-project-directory() {
+    my_path=$(ls $PROJECTS | peco)
+
+    if [[ -z "${my_path}" ]]; then
+	pwd
+    else
+	echo "$HOME/code/$my_path"
+    fi
+}
+
+__pgt-project-directory
