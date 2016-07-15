@@ -31,3 +31,20 @@ TODO: Show the keybindings one by one, and give examples with animated gifs.
 **C-x pp**
 
 Example
+
+### iTerm configurations
+
+Add in iTerm2 the following Profile Shortcut Keys
+
+```
+FOR  ACTION         SEND
+⌘←  "HEX CODE"      0x01
+⌘→  "HEX CODE"      0x05
+⌥←  "SEND ESC SEQ"  b
+⌥→  "SEND ESC SEQ"  f
+Here is a visual for those who need it
+```
+
+iTerm add key visual
+
+![](/readme/iterm-configs.png)
