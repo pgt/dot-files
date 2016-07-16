@@ -32,6 +32,7 @@ __install_utils() {
 	hg # Mercurial control version system
 	bzr # Bazaar control version system
 	terminal-notifier # Notifications from the terminal
+	markdown # Will be used by emacs to control markdown
     )
 
     __install "${packages_to_install[@]}"
