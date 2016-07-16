@@ -25,9 +25,7 @@ __install_mac_apps() {
 	goofy # Client for Facebook Messenger
 	grammarly # English study
 	itsycal # Calendar in the menu bar
-	# boot2docker
 	# vmware-fusion
-	# vagrant
 	# google-chrome
 	# firefox
 	# microsoft-office
