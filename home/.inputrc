@@ -16,7 +16,8 @@ set colored-status on
 "\C-xh":"bind -p|peco\C-j"
 
 # Clean reset and copy from clipboard
-"\C-\M-l":"\C-a\C-kreset\C-j\pbpaste"
+# This command seens to be kind of useless
+"\C-xcp":"\C-a\C-kreset\C-j\pbpaste"
 
 # Navigation
 # Probably not a good idea
@@ -28,7 +29,7 @@ set colored-status on
 "\e[1;5D":backward-word
 
 # Add sudo to current command
-"\C-hs":"\C-asudo \C-e"
+"\C-xu":"\C-asudo \C-e"
 
 # Switch project
 "\C-xpp":"pgt-project-switch\C-j"
@@ -50,7 +51,10 @@ set colored-status on
 
 # Go back to the last directory
 # \e is option key and Z
-"\ez":'cd -\015ls\015'
+"\C-x.":'cd -\015ls\015'
 
 # Like helm show commands
 "\ex":"$(all_commands)\C-j"
+
+# Backward kill word
+# "\eh":backward-kill-word # I couldn't find a good keybinding for this
