@@ -24,7 +24,18 @@ TODO: Show the tree output and explains the directories
 
 ## Keybindings
 
-TODO: Show the keybindings one by one, and give examples with animated gifs.
+| Keybiding        | Explanation                                      |
+| ----------------:| ------------------------------------------------:|
+| C-x C-r          | Reload the `.inputrc`                            |
+| C-x h            | Show all available keybidings in `.inputrc`      |
+| C-x u            | Add sudo to current command                      |
+| C-x pp           | Switch project                                   |
+| C-x k            | Kill process                                     |
+| C-x C-f          | Find a file in the current project               |
+| C-x ,a           | Run rspec tests in the current project           |
+| C-x ,v           | Run a specific rspec test in the current project |
+| C-x  .           | Go back to the last directory                    |
+
 
 ### Change project (Emacs stylish)
 
