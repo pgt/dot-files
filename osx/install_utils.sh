@@ -31,6 +31,7 @@ __install_utils() {
 	ack # for find filter
 	hg # Mercurial control version system
 	bzr # Bazaar control version system
+	terminal-notifier # Notifications from the terminal
     )
 
     __install "${packages_to_install[@]}"
