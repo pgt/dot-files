@@ -33,6 +33,7 @@ __install_utils() {
 	bzr # Bazaar control version system
 	terminal-notifier # Notifications from the terminal
 	markdown # Will be used by emacs to control markdown
+	elixir # elixir lang
     )
 
     __install "${packages_to_install[@]}"
