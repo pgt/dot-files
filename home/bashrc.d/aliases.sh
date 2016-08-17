@@ -105,3 +105,6 @@ alias all_commands='$(compgen -ac | peco)'
 # Keep the computer wake for 1 hour
 # Only for MacOSX
 alias caffeine='$(caffeinate -t 3600 &)'
+
+# Open a web server in the current directory in port 8000 // requires Python 2
+alias webserverhere='python -m SimpleHTTPServer'
