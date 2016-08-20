@@ -34,6 +34,7 @@ __install_utils() {
 	terminal-notifier # Notifications from the terminal
 	markdown # Will be used by emacs to control markdown
 	elixir # elixir lang
+	fpp
     )
 
     __install "${packages_to_install[@]}"

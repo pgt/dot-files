@@ -108,3 +108,6 @@ alias caffeine='$(caffeinate -t 3600 &)'
 
 # Open a web server in the current directory in port 8000 // requires Python 2
 alias webserverhere='python -m SimpleHTTPServer'
+
+# Using fpp to edit last execution
+alias pgt-edit_last_execution='fc -e : -1 | fpp -ni -c="open -a /Applications/Emacs.app"'

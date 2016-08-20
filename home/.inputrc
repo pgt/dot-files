@@ -37,6 +37,9 @@ set colored-status on
 # Kill process
 "\C-xk":"pgt-kill\C-j"
 
+# Edit last executions
+"\C-xe":"pgt-edit_last_execution\C-j"
+
 # Project find file
 "\C-x\C-f":"$(pgt-project-find-file)\C-j"
 
