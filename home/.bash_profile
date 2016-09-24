@@ -24,7 +24,4 @@ __setup() {
 
 __setup
 
-# Switch project folder
-pgt-project-switch
-
 [[ -s "/Users/pgt/.gvm/scripts/gvm" ]] && source "/Users/pgt/.gvm/scripts/gvm"
