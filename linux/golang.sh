@@ -5,7 +5,7 @@ __install_golang() {
     already_installed=$(__already_installed "go")
 
     if [[ $already_installed = "not_installed" ]]; then
-	__install golang # version 1.5.1
+	__install golang # version 1.6.3
     else
 	__green_echo "Already installed"
     fi
@@ -67,15 +67,6 @@ __install_golang_packages() {
 	go get -u `# The -u flag instructs get to use the network to update` \
 	   "$package"
     done
-}
-
-__install_gvm() {
-    bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
-
-    gvm install go1.3.3
-    gvm install go1.5.2
-
-    gvm use go1.5.2 # --default
 }
 
 #__install_golang
