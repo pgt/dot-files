@@ -34,7 +34,9 @@ __install_utils() {
 	terminal-notifier # Notifications from the terminal
 	markdown # Will be used by emacs to control markdown
 	elixir # elixir lang
-	fpp
+	fpp # Facebook Path Picker
+	s3cmd # S3 command line tool
+	elasticsearch
     )
 
     __install "${packages_to_install[@]}"
