@@ -37,6 +37,8 @@ __install_utils() {
 	fpp # Facebook Path Picker
 	s3cmd # S3 command line tool
 	elasticsearch
+	nmap
+	wireshark
     )
 
     __install "${packages_to_install[@]}"
