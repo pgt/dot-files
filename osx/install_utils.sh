@@ -38,7 +38,6 @@ __install_utils() {
 	s3cmd # S3 command line tool
 	elasticsearch
 	nmap
-	wireshark
     )
 
     __install "${packages_to_install[@]}"

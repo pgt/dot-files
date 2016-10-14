@@ -29,6 +29,16 @@ __install_mac_apps() {
 	# google-chrome
 	# firefox
 	# microsoft-office
+	wireshark
+
+	# If your list of available capture interfaces is empty
+	# (default OS X behavior), try installing ChmodBPF from
+	# homebrew cask: brew cask install wireshark-chmodbpf This
+	# creates an 'access_bpf' group and adds a launch daemon that
+	# changes the permissions of your BPF devices so that all
+	# users in that group have both read and write access to those
+	# devices.
+	wireshark-chmodbpf
     )
 
     for app in "${apps[@]}"; do
