@@ -72,16 +72,6 @@ alias top_commands=history | awk '{print $2}' | awk 'BEGIN {FS="|"}{print $1}' |
 # For mistyped corrections
 alias sl=ls
 
-# Clipboard: only for linux, on Mac OSX is already implemented
-[ -x "$(command -v pbcopy)" ] || alias pbcopy='xclip -selection clipboard'
-[ -x "$(command -v pbpaste)" ] || alias pbpaste='xclip -selection clipboard -o'
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-#
-# For linux
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
 # Alerts for Mac
 alias ialert='terminal-notifier -title "Terminal" -message "Done with task!"'
 
