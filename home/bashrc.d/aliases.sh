@@ -41,7 +41,7 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # Emacs GUI only for OSX
-[[ $(__platform) = "macosx" ]] && alias emacs="open -a /Applications/Emacs.app"
+alias emacs="open -a /Applications/Emacs.app"
 
 # PG installation
 alias install_pg="gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config"
