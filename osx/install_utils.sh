@@ -38,6 +38,9 @@ __install_utils() {
 	s3cmd # S3 command line tool
 	elasticsearch
 	nmap
+	daemonize # command daemon / turns commands into daemons
+	pv # Show progress
+	dialog # Nice GUI for shell
     )
 
     __install "${packages_to_install[@]}"
