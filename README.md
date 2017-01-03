@@ -8,7 +8,7 @@ In order to install and configure your environment use:
 wget https://raw.githubusercontent.com/pgt/dot-files/master/app.sh; sudo chmod +x app.sh; ./app.sh start
 ```
 
-This will work on Linux or MacOS.
+This will work on MacOS.
 
 ## Static analysis [Shellshock]
 
