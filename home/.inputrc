@@ -7,7 +7,11 @@ set completion-ignore-case on
 set completion-map-case on
 set history-size -1
 set keyseq-timeout 1000
-set colored-status on
+
+# for some reason this command is not recognized anymore and outputs
+# an error `unknown variable name`
+#
+# set colored-status on
 
 # Reload the .inputrc file
 "\C-x\C-r":re-read-init-file
