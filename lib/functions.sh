@@ -41,53 +41,6 @@ __red_echo() {
 }
 
 __install() {
-    local platform
-    platform=$(__platform)
-
-    if [[ $platform = "linux" ]]; then
-	__install_on_linux "$@"
-
-    elif [[ $platform = "macosx" ]]; then
-	__install_on_macosx "$@"
-
-    else
-	exit 1; # Let's get out of this
-    fi
-}
-
-__already_installed() {
-    local app_name=$1
-
-    # This also could be [ -x "$(command -v $app_name)" ]
-    command -v "$app_name" && echo "installed" || echo "not_installed"
-}
-
-__install_on_linux() {
-    local packages_to_install=("$@") # This catches all args and build an array
-
-    # Considering the package names as a array and install one by one
-    for package_name in "${packages_to_install[@]}"; do
-	sudo apt-get install \
-	     -qq `# No output except for errors` \
-	     -y `# Always assume yes` \
-	     --force-yes `# Always assume yes` \
-	     "$package_name" `# Arg with the name of the package`
-
-	local exit_status_from_apt_get=$?
-
-	## The exit status of the last command run is
-	## saved automatically in the special variable $?.
-	## Therefore, testing if its value is 0, is testing
-	## whether the last command ran correctly.
-	if [[ $exit_status_from_apt_get -gt 0 ]]; then
-	    __red_echo "Can't install the package [$package_name]"
-	else
-	    __green_echo "Successfully installed [$package_name]"
-	fi
-    done
-}
-
-__install_on_macosx() {
     local packages_to_install=("$@") # This catches all args and build an array
 
     for package_name in "${packages_to_install[@]}"; do
@@ -105,6 +58,13 @@ __install_on_macosx() {
 	    __green_echo "Successfully installed [$package_name]"
 	fi
     done
+}
+
+__already_installed() {
+    local app_name=$1
+
+    # This also could be [ -x "$(command -v $app_name)" ]
+    command -v "$app_name" && echo "installed" || echo "not_installed"
 }
 
 __require_dependencies() {
@@ -152,34 +112,6 @@ __link_files_at_home() {
     done
 }
 
-__add_ppa_repositories() {
-    __green_echo "Add PPA's to source list"
-
-    local ppa_source=(
-	ppa:ultradvorka/ppa
-	ppa:git-core/ppa
-	ppa:synapse-core/ppa
-	ppa:rael-gc/scudcloud
-    )
-
-    for ppa in "${ppa_source[@]}"; do
-	sudo add-apt-repository "$ppa" -y
-    done
-}
-
-__update_source_list() {
-    __green_echo "Starting updating source list"
-
-    set +euo
-
-    sudo apt-get -h > /dev/null 2>&1 &&
-	sudo apt-get update -y
-
-    __quit_on_error "Error on update"
-
-    set -euo pipefail
-}
-
 __quit_on_error() {
     let exit_status=$?
 
@@ -191,21 +123,7 @@ __quit_on_error() {
     fi
 }
 
-__upgrade_linux(){
-    __add_ppa_repositories
-    __update_source_list
-
-    set +euo
-
-    sudo apt-get -h > /dev/null 2>&1 &&
-	sudo apt-get upgrade -y `# Always assume yes`
-
-    __quit_on_error "Error on upgrade linux"
-
-    set -euo pipefail
-}
-
-__upgrade_macosx(){
+__upgrade_system(){
     # If brew is not installed, then install
     if [[ ! -x "$(command -v brew)" ]]; then
 	__green_echo "Homebrew is not installed. Let's go install now"
@@ -228,62 +146,7 @@ __upgrade_macosx(){
     brew cask cleanup || true
 }
 
-__upgrade_system(){
-    platform=$(__platform)
-
-    if [[ $platform = "linux" ]]; then
-	__upgrade_linux
-
-    elif [[ $platform = "macosx" ]]; then
-	__upgrade_macosx
-
-    else
-	exit 1; # Let's get out of this
-    fi
-}
-
-__platform() {
-    local platform=$OSTYPE
-    local advice_for_the_future_me="Please, me of the future, if you are \
-	  not in a MacOS and not in a Linux, what fuck are you doing? \
-	  Are you out of your mind? Please kill yourself! \
-	  Alright, alright, forget the last part... \
-	  Please say me, this is a FreeBSD at least? I know it!!!"
-
-    case $platform in
-	darwin*) echo "macosx" ;;
-	linux*) echo "linux" ;;
-	*) __red_echo "$advice_for_the_future_me" ;;
-    esac
-}
-
-__install_all_linux_packages(){
-    linux_packages=(
-	$(find linux -name "*.sh")
-    )
-
-    for package_file in "${linux_packages[@]}"; do
-	__green_echo "Starting installation from file $package_file"
-	source "$package_file"
-    done
-}
-
 __install_all_packages(){
-    platform=$(__platform)
-
-    if [[ $platform = "linux" ]]; then
-	__install_all_linux_packages
-
-    elif [[ $platform = "macosx" ]]; then
-	__install_all_macosx_packages
-
-    else
-	__red_echo "This is not Linux or OSX, what are you doing with your life?"
-	exit 1; # Let's get out of this
-    fi
-}
-
-__install_all_macosx_packages(){
     macosx_packages=(
 	$(find osx -name "*.sh")
     )
