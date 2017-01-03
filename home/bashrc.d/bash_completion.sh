@@ -13,8 +13,8 @@ __bash_completion() {
 }
 
 __bash_completion_docker() {
-    if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
-	pushd "$(brew --prefix)/etc/bash_completion" > /dev/null
+    if [ -d "$(brew --prefix)/etc/bash_completion.d" ]; then
+	pushd "$(brew --prefix)/etc/bash_completion.d" > /dev/null
 	ln -sf /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion
 	ln -sf /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion
 	ln -sf /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion
