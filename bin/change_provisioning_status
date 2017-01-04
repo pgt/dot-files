@@ -46,6 +46,8 @@ change_provisioning_status() {
 
     info "\n\n=== Fetching provisioning $1\n"
     fetch_provisioning $1 $st
+
+    echo -e "\n"
 }
 
 change_provisioning_status $provisioning_id $change_to_status
