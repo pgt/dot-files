@@ -41,6 +41,7 @@ __install_utils() {
 	daemonize # command daemon / turns commands into daemons
 	pv # Show progress
 	dialog # Nice GUI for shell
+	leiningen # Clojure lang and his builder
     )
 
     __install "${packages_to_install[@]}"
