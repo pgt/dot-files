@@ -18,11 +18,9 @@ __install_mac_apps() {
 	emacs
 	spotify
 	telegram
-	screenhero
 	cord
 	handbrake
 	android-file-transfer # Transfer files from Android device
-	goofy # Client for Facebook Messenger
 	grammarly # English study
 	itsycal # Calendar in the menu bar
 	# vmware-fusion
