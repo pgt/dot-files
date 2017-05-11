@@ -6,3 +6,7 @@
 [core]
 	editor = emacs
 	excludesfile = /Users/pgt/.gitignore
+[push]
+	# Always use the origin/current-branch as the default to
+	# push. Avoids unwanteds pushes to master.
+	default = current
