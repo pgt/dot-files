@@ -23,7 +23,7 @@ __install_utils() {
 	gpg
 	ag
 	ispell
-	npm
+	nvm
 	python
 	aspell # Spell checker for emacs use
 	freetds
