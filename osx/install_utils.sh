@@ -9,6 +9,7 @@ __install_utils() {
 	git
 	wget
 	rbenv
+	rbenv-default-gems
 	ruby-build
 	rbenv-gemset
 	node

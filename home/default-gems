@@ -1,0 +1,6 @@
+# This file is used by a rbenv plugin
+#
+# https://github.com/rbenv/rbenv-default-gems
+bundler
+rubocop
+reek
