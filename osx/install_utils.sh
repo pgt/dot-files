@@ -12,7 +12,6 @@ __install_utils() {
 	rbenv-default-gems
 	ruby-build
 	rbenv-gemset
-	node
 	imagemagick
 	ngrep
 	tcpdump
@@ -42,7 +41,10 @@ __install_utils() {
 	daemonize # command daemon / turns commands into daemons
 	pv # Show progress
 	dialog # Nice GUI for shell
-	leiningen # Clojure lang and his builder
+
+	# Clojure
+	leiningen
+	boot-clj
     )
 
     __install "${packages_to_install[@]}"
