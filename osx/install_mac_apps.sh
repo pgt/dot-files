@@ -5,7 +5,6 @@ __install_mac_apps() {
 
     apps=(
 	adium
-	fluid
 	vlc
 	skype
 	transmission
@@ -19,8 +18,9 @@ __install_mac_apps() {
 	spotify
 	telegram
 	cord
-	handbrake
+	# Android
 	android-file-transfer # Transfer files from Android device
+	android-platform-tools
 	grammarly # English study
 	itsycal # Calendar in the menu bar
 	# vmware-fusion
