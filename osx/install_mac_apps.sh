@@ -18,6 +18,7 @@ __install_mac_apps() {
 	spotify
 	telegram
 	cord
+	caffeine
 	# Android
 	android-file-transfer # Transfer files from Android device
 	android-platform-tools
