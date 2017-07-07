@@ -41,6 +41,7 @@ __install_utils() {
 	daemonize # command daemon / turns commands into daemons
 	pv # Show progress
 	dialog # Nice GUI for shell
+	shellcheck
 
 	# Clojure
 	leiningen
