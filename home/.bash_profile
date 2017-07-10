@@ -23,5 +23,3 @@ __setup() {
 }
 
 __setup
-
-[[ -s "/Users/pgt/.gvm/scripts/gvm" ]] && source "/Users/pgt/.gvm/scripts/gvm"
