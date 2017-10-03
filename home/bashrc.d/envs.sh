@@ -65,7 +65,7 @@ __envs() {
     export PATH="$PATH:/usr/local/heroku/bin"
     export PATH="$PATH:$GOROOT/bin"
     export PATH="$PATH:$GOPATH/bin"
-    export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.5/bin"
+    export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.6/bin"
     export PATH="$PATH:$HOME/code/dot-files/bin"
     export PATH="$PATH:/Applications/MAMP/Library/bin/mysql"
     export PATH="$PATH:/Applications/Redis.app/Contents/Resources/Vendor/redis/bin"
