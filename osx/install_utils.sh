@@ -42,6 +42,8 @@ __install_utils() {
 	pv # Show progress
 	dialog # Nice GUI for shell
 	shellcheck
+	ansible
+	cloc # Count lines of code in a project
 
 	# Clojure
 	leiningen
