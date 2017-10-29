@@ -38,6 +38,7 @@ __install_mac_apps() {
 	# users in that group have both read and write access to those
 	# devices.
 	wireshark-chmodbpf
+	discord
     )
 
     for app in "${apps[@]}"; do
