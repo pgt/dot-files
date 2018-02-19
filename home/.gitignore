@@ -42,6 +42,7 @@ Session.vim
 # Tern files
 tern
 *tern
+.tern-port
 
 # Redis local snapshot backup from datastore
 dump.rdb
