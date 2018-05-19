@@ -72,6 +72,12 @@ __envs() {
 
     # Rails spring turn it off forever :)
     export DISABLE_SPRING=true
+
+    # Android configurations/React native development
+    export ANDROID_HOME=$HOME/Library/Android/sdk
+    export PATH=$PATH:$ANDROID_HOME/tools
+    export PATH=$PATH:$ANDROID_HOME/tools/bin
+    export PATH=$PATH:$ANDROID_HOME/platform-tools
 }
 
 __envs
