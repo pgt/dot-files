@@ -13,6 +13,8 @@ __install_npm_packages() {
     packages=(
 	git-open
 	jsontool
+	create-react-native-app
+	react-devtools
     )
 
     npm install -g "${packages[@]}"
