@@ -13,6 +13,7 @@ __install_npm_packages() {
     packages=(
 	git-open
 	jsontool
+	react-native-cli
 	create-react-native-app
 	react-devtools
     )
