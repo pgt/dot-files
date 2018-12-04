@@ -106,3 +106,5 @@ alias pgt-edit_last_execution='fc -e : -1 | fpp -ni -c="open -a /Applications/Em
 # Usage:
 # $ branch-creator $name
 alias branch-creator='git for-each-ref --format="%(committerdate) %09 %(authorname) %09 %(refname)" | sort -k5n -k2M -k3n -k4n | grep '
+
+alias rn='react-native'
