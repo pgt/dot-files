@@ -16,6 +16,16 @@ __install_npm_packages() {
 	react-native-cli
 	create-react-native-app
 	react-devtools
+
+	# Packages to switch automatically node version for each
+	# project directory using nvm
+	avn
+	avn-nvm
+	avn-n
+
+	# Alfred3
+	alfred-dark-mode
+	alfred-fkill
     )
 
     npm install -g "${packages[@]}"
