@@ -65,3 +65,6 @@ set keyseq-timeout 1000
 
 # Backward kill word
 # "\eh":backward-kill-word # I couldn't find a good keybinding for this
+
+# Run all tests from project
+"\C-xph":"git push heroku master\C-j"
