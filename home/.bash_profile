@@ -23,3 +23,7 @@ __setup() {
 }
 
 __setup
+
+# Automatically switch between node versions
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
+
