@@ -4,7 +4,7 @@ __bash_completion() {
     bash_version=$(__bash_version)
 
     if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
-	if [[ $bash_version == "4" ]]; then
+	if [[ $bash_version == "5" ]]; then
 	    source "$(brew --prefix)/etc/bash_completion"
 	else
 	    __red_echo "Your bash version is $bash_version. You need bash newer than 4."
