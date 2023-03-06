@@ -26,8 +26,8 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 alias gs="git status"
 
 # Rails
-alias rs="bundle exec rails s webrick"
-alias rc="bundle exec rails c"
+alias rs="bin/rails s"
+alias rc="bin/rails c"
 
 # Bundle
 alias bi="bundle install"
